@@ -1,7 +1,7 @@
 # Site settings
 title: Hua Zhang
 email: hua.zhang@wsu.edu
-description: "A Java developer with concurrent and parallel programming expereince in distribute systems. Reading,  writing, coding and running.\n"
+description: "A Java developer with concurrent and parallel programming expereince in distribute systems.\n"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hustbill.github.io" # the base hostname & protocol for your site
 twitter_username: billyzhang2010
