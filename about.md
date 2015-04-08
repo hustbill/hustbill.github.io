@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: About
+permalink: /about/
+---
 
 ##Hua Zhang
 
