@@ -7,36 +7,50 @@ permalink: /about/
 ##Hua Zhang
 
 <br />360-553-2393 (mobile)
-<br />2406 NE 139TH ST X226 Vancouver, WA 98686	
+<br /> 1262 Sierra Village Place, San Jose, 95132
 <br />hua.zhang@wsu.edu
 <br />https://github.com/hustbill
 
 
 ##Technical Skills
 
-An innovative software engineer with 7 years of development experience, and had expertise in:
+- Java, Object-C and Python programming on Windows/Mac OS/ Linux  
+- Database design and programming: MySQL, Oracle, PostgreSQL, MongoDB and Redis  
+- Concurrent and distributed applications with AKKA/Scala, Maven/SBT  
+- Big data methodologies: MapReduce, Hadoop, HDFS, HBase, Hive, Spark  
+- Open source frameworks: ElasticSearch, Logstash, Kafka and ActiveMQ  
+- Automated test with JUnit and TestNG, Mocha and Chai  
+- SOA related standards like REST/OAuth/JSON  
+- Cloud computing platforms: Amazon EC2, Azure  
 
-C++/C#, Java, Object-C programming on Unix/Linux/Windows/iOS
 
-Concurrent and distributed applications with Akka/Scala, Maven/SBT
+##Work Experience
 
-Strong multithreading, debugging and troubleshooting skills
+**AboveGEM Inc.**
+<br />Santa Clara, CA June 2015 - Present
+<br />Software engineer
+- 
+- REST API development and maintenance for direct selling companies    
+Platform:  Java/ Python/ Spark/ Kafka/ PostgreSQL/ Redis  
+Work closely with product manager to translate business requirements to technical design  
+Created a clean design, wrote quality code with appropriate unit tests, document the APIs   
+Contribute to the continuous improvement of recommendation algorithms for performance  
+Used cloud infrastructure services and integrate with other 3rd party services  
+Wrote scripts for Nagois to monitor web services and Redis server  
+Cooperated with Front End development team for troubleshooting  
 
-Cloud computing, Amazon Web Service, EC2, REST/SOAP
+- New iOS Application-OPPORTUNITY for direct selling distributors    
+Platform: Java/ Object-C/ ElasticSearch/ MongoDB/ Hadoop  
+Developed back-end APIs for channel service in this new iOS Application   
+Analyzed and improved the efficiency, scalability and stability of system and resources  
+Visualized and analyzed logs via ElasticSearch, Logstash, and Hadoop  
+Wrote adequate functional, compatibility and regression test scripts  
+Provided systems administration support to customers  
 
-Using Python, Hive/Pig to implement MapReduce jobs to support distributed processing
-
-PHP, jQuery, node.js, MySQL, SQL Server, Oracle and MongoDB
-
-Perl, XML/Json, Javascript, Unix Shell, PowerShell
-
-Expert in software configuration methodologies: Agile, IBM ClearCase, Git/SVN/TFS
-
-##Experience
 **Washington State University**
 <br />Vancouver, WA Aug 2013 - Present
 <br />Research Assistant
-	
+- 
 – A Resource Allocation middleware for distributed system
 <br />Design a resource allocation strategy in data sensitive environment
 <br />Implement this strategy by Java/Scala, Maven/SBT and AKKA 2.3.5
