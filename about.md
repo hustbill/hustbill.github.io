@@ -29,7 +29,7 @@ permalink: /about/
 **AboveGEM Inc.**
 <br />Santa Clara, CA June 2015 - Present
 <br />Software engineer
-- 
+
 - REST API development and maintenance for direct selling companies    
 Platform:  Java/ Python/ Spark/ Kafka/ PostgreSQL/ Redis  
 Work closely with product manager to translate business requirements to technical design  
