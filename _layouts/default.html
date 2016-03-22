@@ -7,20 +7,51 @@
     </title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+  <!--{% include head.html %}-->
+   <body>
+    <div id="main">
+      <header>
+        <h1>
+          Hua Zhang
+        </h1>
+        <header>
+          <nav role="navigation">
+            <ul>
+              <li>
+                <a href="/"> Home </a>
+              </li>
+              <li>
+                <a href="/portfolio/"> Portfolio </a>
+              </li>
+              <li>
+                <a href="/about"> About </a>
+              </li>
+              <li>
+                <a href="/contact"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+          {{ content }}
+          <footer>
+            <p>
+              @copy; Hua Zhang  hua.zhang@wsu.edu 2016 | All Rights Reserved.
+            </p>
+          </footer>
     </div>
-
-    {% include footer.html %}
-
   </body>
+
+  <!--<body>-->
+
+  <!--  {% include header.html %}-->
+
+  <!--  <div class="page-content">-->
+  <!--    <div class="wrapper">-->
+  <!--      {{ content }}-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <!--  {% include footer.html %}-->
+
+  <!--</body>-->
 
 </html>
