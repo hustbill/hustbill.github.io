@@ -1,6 +1,6 @@
-#Hux Blog
+#Hustbill Blog
 
-###[View Live Hux Blog &rarr;](http://huxpro.github.io)
+###[View Live Hustbill Blog &rarr;](http://hustbill.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
