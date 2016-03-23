@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Grandma-Story01"
+title:  "Grandma Story01"
 date:   2016-03-23 10:29:08
 categories: jekyll update
 ---
