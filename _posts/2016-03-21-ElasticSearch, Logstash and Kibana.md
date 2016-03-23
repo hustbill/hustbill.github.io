@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "This is my first post!"
+title:  "ElasticSearch, Logstash and Kibana"
 date:   2016-03-22 12:04:08
 categories: jekyll update
 ---
-# ElasticSearch, Logstash and Kibana
+
 The ELK Stack is the combination of Elasticsearch, Logstash, and Kibana that is used specifically in log analytics. Logstash ships log data to Elasticsearch, which indexes the information in a searchable datastore. Kibana then takes the datastore and shows the information in graphical format for log analysis.
 Logstash is developed by Ruby,  Kibana by javascript, Elasticsearch by Java
 
