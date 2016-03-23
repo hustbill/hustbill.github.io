@@ -1,57 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset=utf-8 />
-    <title>
-      {% if page.title %} {{ page.title }} | {% endif %} Hua Zhang, Software Engineer
-    </title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <!--{% include head.html %}-->
-   <body>
-    <div id="main">
-      <header>
-        <h1>
-          Hua Zhang
-        </h1>
-        <header>
-          <nav role="navigation">
-            <ul>
-              <li>
-                <a href="/"> Home </a>
-              </li>
-              <li>
-                <a href="/portfolio/"> Portfolio </a>
-              </li>
-              <li>
-                <a href="/about"> About </a>
-              </li>
-              <li>
-                <a href="/contact"> Contact </a>
-              </li>
-            </ul>
-          </nav>
-          {{ content }}
-          <footer>
-            <p>
-              @copy; Hua Zhang  Writing Center 2016 | All Rights Reserved.
-            </p>
-          </footer>
-    </div>
-  </body>
+<html lang="en">
 
-  <!--<body>-->
+{% include head.html %}
 
-  <!--  {% include header.html %}-->
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-  <!--  <div class="page-content">-->
-  <!--    <div class="wrapper">-->
-  <!--      {{ content }}-->
-  <!--    </div>-->
-  <!--  </div>-->
+    {% include nav.html %}
 
-  <!--  {% include footer.html %}-->
+    {{ content }}
 
-  <!--</body>-->
+    {% include footer.html %}
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
 
 </html>
