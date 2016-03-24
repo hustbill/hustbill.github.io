@@ -1,6 +1,6 @@
 ---
 label: post
-title: "A-strange-dream"
+title: "A strange dream"
 date: 2016-03-29 06:34:00
 categroies: jekyll update
 ---
