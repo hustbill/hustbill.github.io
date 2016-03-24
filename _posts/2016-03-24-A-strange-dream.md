@@ -1,6 +1,6 @@
 ---
 label: post
-title: "看完微信同学群里一段考试作弊视频以后"
+title: "A-strange-dream"
 date: 2016-03-29 06:34:00
 categroies: jekyll update
 ---
