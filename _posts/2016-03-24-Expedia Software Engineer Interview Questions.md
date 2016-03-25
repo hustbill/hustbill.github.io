@@ -5,8 +5,7 @@ date: 2016-03-24 23:04:00
 categories: jekyll update
 ---
 
-
-#Software Developer Interview Questions  
+##Software Developer Interview Questions  
 How will you generate random numbers.  
 How to use big data in mobile apps.  
 Coding problems on tree  
@@ -18,7 +17,8 @@ Lots of queries involving JOINs
 Given 2 integer arrays, find common elements.  
 Design an extensible school schema.  
 tracing recursive method that are called multiple times in the same method.  
-For your web application how thousands of user communicate with your database simultaneously ? Do they every time go through Connect Db -   Fetch result - Close Connection ? Or there is some other way ?  
+For your web application how thousands of user communicate with your database simultaneously ?  
+Do they every time go through Connect Db -   Fetch result - Close Connection ? Or there is some other way ?  
 Rotated Binary Search problem (values at the end of the array are shifted to the front where the array remains to be in a sorted order)  
 Converting two D char array to a int array with space efficient as I can.  
 Given a sorted array of integers, write a function to remove any duplicates (e.g. 1,2,3,3,3,4,4,5 would go to 1,2,3,4,5)  
