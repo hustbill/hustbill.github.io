@@ -14,3 +14,7 @@ categories: jekyll update
 7. tell me about REST api
 8. What is caching?
 9. What is statelessness in RESTful Webservices?
+10. When test you APIs, if the behavior was impact by the data changes in the database. How to handle this case?
+11. how to do automated test?
+12. how to do the continus integeration?
+
