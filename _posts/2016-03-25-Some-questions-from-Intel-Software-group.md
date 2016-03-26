@@ -6,8 +6,9 @@ categories: jekyll update
 ---
 
 
-- 2011-03-09 Some questions from Intel Software group  
-- Posted on March 9, 2011 by hustbill  
+2011-03-09 Some questions from Intel Software group  
+Posted on March 9, 2011 by hustbill  
+
 - Do you enjoy collaborative development and programming with others in a dynamic and fast pace environment?  
 - Do you have a talent for programming?  
 - Do you enjoy the challenge of finding bad bugs?  
