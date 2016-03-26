@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A strange dream"
+title: "梦到考场了"
 date: 2016-03-24 06:34:00
 categroies: jekyll update
 ---
