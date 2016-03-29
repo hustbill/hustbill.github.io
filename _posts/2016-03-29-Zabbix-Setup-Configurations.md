@@ -5,10 +5,10 @@ date: 2016-03-29 14:39:00
 categories: jekyll update
 ---
 
-Note:  
-Zabbix is LAMP based monitoring tool, which include sever, client, proxy (for different IDC without public IP). We only use server/client.  
+Note 
+*Zabbix* is LAMP based monitoring tool, which include sever, client, proxy (for different IDC without public IP). We only use server/client.  
 
-#Installation  
+#*Installation*
 1) zabbix official has its own repository, load the zabbix repo for centos6 first.  
 \# rpm -ivh http://repo.zabbix.com/zabbix/2.0/rhel/6/x86_64/zabbix-release-2.0-1.el6.no…
 
