@@ -5,7 +5,7 @@ date: 2016-03-29 13:33:00
 categories: jekyll update
 ---
 
-``java
+```java
 
 // Given a sorted array that has been transposed (that is, a portion has been removed from one end and attached to the other), write a function to determine if a given number is present in the array.
 // For example, here's a transposed array: 6 7 1 2 3 4 5. Note: numbers don't have to be sequential.
@@ -15,13 +15,14 @@ categories: jekyll update
 // 1. Find the tranposed pos. return index 2
 // 2. do binary search to check the target
 
-<!-- begin     mid     end
+/* begin     mid     end
 6     7 1  2  3 4  5
 
 6 7 1 2 3 4 5
 Search for 7
 
-1 1 2 1 1 1 1 1 1 1 -->
+1 1 2 1 1 1 1 1 1 1 
+*/
 
 public class solution {
     public boolean findTarget (int[] array, int target) {
@@ -99,4 +100,4 @@ public class WordDistanceFinder {
          return min;
     }
 }
-
+```
