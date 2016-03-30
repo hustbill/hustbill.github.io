@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在床上接了一个外包公司电话面试"
+title: "接了一个外包公司电话面试"
 date: 2016-03-30 08:20:00
 categories: jekyll update
 ---
