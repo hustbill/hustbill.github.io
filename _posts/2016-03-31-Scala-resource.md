@@ -5,7 +5,8 @@ date: 2016-03-31 22:50:00
 categories: jekyll update
 ---
 
-Here is my Scala resource list
+Scala resource list
+===================
 
 1. [Scala School](http://twitter.github.com/scala_school) Lessons in the Fundamentals of Scala   
 2. [Effective Scala](http://twitter.github.io/effectivescala/) Twitter's "best practices" for Scala. Useful for understanding idioms in Twitter's code.  
