@@ -14,6 +14,7 @@ Architecture of an ejabberd service
 ===================================
 ejabberd brings configurability, scalability and fault-tolerance to the core feature of XMPP – routing messages.  
 Its architecture is based on a set of pluggable modules that enable different features, including:  
+
     - One-to-one messaging  
     - Store-and-forward (offline messages)  
     - Contact list (roster) and presence  
@@ -32,8 +33,9 @@ Its architecture is based on a set of pluggable modules that enable different fe
 This modular architecture allows high customisability and easy access to the required features. 
 ejabberd enables authenticating users using external or internal databases (Mnesia, SQL), LDAP or external scripts.  
 
-We can opt for the storage:   
-    - SQL databases like Postgres
+We can opt for the storage: 
+  
+    - SQL databases like Postgres  
     - NoSQL databases like MongoDB
 
 Reference
