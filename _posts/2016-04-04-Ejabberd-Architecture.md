@@ -10,8 +10,8 @@ Created by Hua Zhang, last modified on Oct 12, 2015
 ejabberd is the de facto XMPP server in the world. ejabberd has been designed from the ground-up, since 2002 for robust, entreprise deployment. The goal has always been to shot for the moon and that what made it a long-lasting success.  
 ejabberd is specifically designed for enterprise purposes: it is fault-tolerant can utilise the resources of multiple clustered machines, and easily scale when more capacity is required (by just adding a box/VM).  
 
-##Architecture of an ejabberd service
-
+Architecture of an ejabberd service
+===================================
 ejabberd brings configurability, scalability and fault-tolerance to the core feature of XMPP – routing messages.  
 Its architecture is based on a set of pluggable modules that enable different features, including:  
     - One-to-one messaging
@@ -36,3 +36,6 @@ We can opt for the storage:
     - SQL databases like Postgres
     - NoSQL databases like MongoDB
 
+Reference
+=========
+Getting started with ejabberd
