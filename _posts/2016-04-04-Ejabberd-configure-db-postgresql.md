@@ -43,20 +43,18 @@ odbc_username: "admin"
 odbc_password: "root123"  
 ```
  
- 
 5. Add _odbc to modules you wish to use the odbc database, and store messages into archive table  
 ```    
 e.g. mod_offline_odbc instead of mod_offline.  
 full list in ejabberd user guide   
-
 ## Modules enabled in all ejabberd virtual hosts.  
-##  
+##    
 modules:    
   #By default mod_mam does not store messages. If you like to store messages, simply add this mod_mam   option:  
   mod_mam:  
-      default: always   
-      db_type: odbc        
- ```
+      default: always     
+      db_type: odbc     
+```
 
 6. Under authentication comment out internal authentication:  
  ```    
