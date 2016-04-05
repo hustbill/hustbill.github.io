@@ -5,12 +5,24 @@ date: 2016-04-04 11:50:00
 categories: jekyll update
 ---
 
-```java
-/*
-You’ve got a text file that contains x,y,z-coordinate points for every star in the sky (on the order of 1 billion (this is N)). I want to know the 100 (or K) closest stars to earth, how would you compute that? 
-earth = 0, 0, 0
+*Question*
 
-*/
+You’ve got a text file that contains x,y,z-coordinate points for every star in the sky (on the order of 1 billion (this is N)). I
+want to know the 100 (or K) closest stars to earth, how would you compute that? earth = 0, 0, 0
+
+*Solution*  
+(1) Split the file by N= 10000 lines,  and calculate the distance, define a class Star with comparable  
+(2) use a Priority queue  
+(3) Fill the heap with first 100 (k) values  
+(4) Comapre each new value with the top of heap  
+     -  if bigger do nothing  
+     -  if smaller replace top of the heap  
+Finally, the heap contains top 100 closest stars.   
+
+Attached file is my sample source code. Your suggestions are highly appreciated!  
+
+
+```java 
 import java.util.*;
 
 public class KthClosestStarFinder{
