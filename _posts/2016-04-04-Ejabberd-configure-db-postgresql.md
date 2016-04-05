@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Configure Ejabberd chat server to use PostgreSQL"
