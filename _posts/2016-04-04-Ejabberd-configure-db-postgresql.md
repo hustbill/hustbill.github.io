@@ -10,19 +10,19 @@ Configure Ejabberd chat server to use PostgreSQL
 In order to make data persistent with in any application, we can link it to a PostgreSQL relational database.
  
 1. To change the default to use a postgres database we first need to create a new postgresql database on the server  
-```code
+```  
 huazhang@zhoutekiMacBook-Air:~/ejabberd-15.09/bin$ psql
 psql (9.4.4)
 huazhang=# run ./createdb ejabberd
  ```
  
 2. Create the tables using the supplied script    
-```code
+```  
 huazhang-# ./psql ejabberd < ~/ejabberd-15.09/lib/ejabberd-15.09/priv/sql/pg.sql
 ```
  
 3. Add a user for the database  
-```code
+```  
 ~/ejabberd-15.09/bin$ createuser -P -s -e admin  
 Enter password for new role: root123  
 Enter it again: root123  
@@ -30,7 +30,7 @@ CREATE ROLE testadmin PASSWORD 'md55ebf4663bc3108d036c91bc4bbcfd599' SUPERUSER C
 ```
 
 4. Configure ODBC options in ejabberd.cfg:  
-```code
+```  
 Scroll down to the section headed Database setup.  
 edit the following, remove the %% commenting  
 ##  
@@ -45,7 +45,7 @@ odbc_password: "root123"
  
  
 5. Add _odbc to modules you wish to use the odbc database, and store messages into archive table  
-```code  
+```    
 e.g. mod_offline_odbc instead of mod_offline.  
 full list in ejabberd user guide   
 
@@ -59,7 +59,7 @@ modules:
  ```
 
 6. Under authentication comment out internal authentication:  
- ```code  
+ ```    
 ##  auth_method:  internal  
 Then un comment auth_method: odbc  
  ```
@@ -67,7 +67,7 @@ Then un comment auth_method: odbc
 7. Register a new user and appear online using PSI client or similar application
 
 8. Add a user to allowed admin access control list in ejabberd.cfg
- ```code
+ ```  
 {acl, admin, {user, "username", "server"}}.  
  ```
  
