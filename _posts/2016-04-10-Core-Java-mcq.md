@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Core Java concept questions"
-date:   2016-04-10 16:48:08
+date:   2016-04-10 15:48:08
 categories: jekyll update
 ---
 
-Question: 6 of 39  -  Enhance vs. Traditional For Loop
-
+Question: 6 of 39  -  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
 
 A when you need access to the index of the current element within the body of the loop
@@ -15,10 +14,7 @@ C. when you need to iterate an array in reverse
 D. All of the above
 
 
-
-
-
-Question: 7 of 39 － Starting an Already Running Thread
+7. － Starting an Already Running Thread  
 Which of the following will happen if you try to start a thread that has already  been started?
 a. it keeps running with no interruption
 b. it thrown an IllegalThreadSateException
