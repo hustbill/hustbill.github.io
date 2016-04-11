@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 
-6.   -  Enhance vs. Traditional For Loop  
+6.  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
 
     A when you need access to the index of the current element within the body of the loop
@@ -15,7 +15,7 @@ In which of the following scenarios is it appropriate to use the enhanced for lo
     D. All of the above
 
 
-7. － Starting an Already Running Thread  
+7. Starting an Already Running Thread  
 Which of the following will happen if you try to start a thread that has already  been started?
     
     a. it keeps running with no interruption
@@ -134,7 +134,7 @@ for(String tempString:setInput){
  }
 ```
 
-24.   -  Switch Statement
+24.  Switch Statement
 Given the switch statement below, which of the following statements is FALSE?
 
     A        The expression must be of a primitive type, such as int, byte, or short.
@@ -142,11 +142,11 @@ Given the switch statement below, which of the following statements is FALSE?
     C        The default case always comes last.
     D        The break at the end of each case is optional.
 
-25.   -  Final Block Execution
+25.  Final Block Execution
 Based on the code block below, the finally block will be executed.
 A true
 
-26.   -  ArrayList Capacity
+26.  ArrayList Capacity
 The capacity of an ArrayList...  
 
     A        ...is set to zero at initialization.
@@ -170,7 +170,7 @@ Which of the following features is supported by Java?
     C        User definable operator overloading.  
     D        The ability to do pointer arithmetic.  
 
-29.   -  Marker Interface
+29.  Marker Interface
 Which of the following is considered a marker interface?
 
     A        Cloneable  
@@ -185,7 +185,7 @@ Marker interface is also called tag interface by some java gurus. In java we hav
     Remote interface
     ThreadSafe interface
 
-30.   -  Read-Only List
+30.  Read-Only List
 You are given a requirement to create a read-only list. Which of the following approaches should you use?
 
     A        Create members as final and add them to the list.
@@ -195,7 +195,7 @@ You are given a requirement to create a read-only list. Which of the following a
  
  In Java you can use Collections.unModifiableList() method  to create read only List , Collections.unmodifiableSet() for creating read-only Set like read only HashSet and similarly creating a read only Map in Java, as shown in below example. Any modification in read only List will result in java.lang.UnSupportedOperationException in Java.
 
-31.   -  Finding Errors
+31.  Finding Errors
 Which of the following indicates what is WRONG with the statement below?
 
     A
@@ -203,7 +203,7 @@ Which of the following indicates what is WRONG with the statement below?
     C        An ArrayList cannot be a list.
     D        All of the above
 
-32.   -  Declared Throwables
+32.  Declared Throwables
 Which of the following Throwables needs to be declared?
 A        Error
 B        RuntimeException
@@ -213,7 +213,7 @@ D        Exception
 选c
 There are two special cases: Error and RuntimeException: these two classes (and their subclasses) are considered unchecked exceptions, and are either frequent enough or catastrophic enough that you do not need to declare them in throws clauses. Everything else is a checked exception, and is ususally a subclass of Exception; these exceptions have to be handled or declared.
 
-33.   -  Concurrent Usage
+33.  Concurrent Usage
 Which of the following is the LEAST suitable for concurrent usage?
 A        new ArrayList();
 B        Collections.unmodifiableList( new ArrayList() );
@@ -222,7 +222,7 @@ D        new ConcurrentLinkedQueue();
 我选的a
 http://stackoverflow.com/questions/561671/best-way-to-control-concurrent-access-to-java-collections
 
-34.   -  Java Interfaces
+34.  Java Interfaces
 Which of the following statements about interfaces in Java is TRUE?
 A        They can contain variable definitions.
 B        They can be extended by subinterfaces.
@@ -233,7 +233,7 @@ E        All of the above
 answer: D
 https://en.wikipedia.org/wiki/Interface_%28Java%29#Defining_an_interface
 
-35.   -  Abstract Classes
+35.  Abstract Classes
 Which of the following indicates when you can use abstract classes?
 A        when inheriting behavior from multiple parents
 B        to extract common behavior into a parent
@@ -245,7 +245,7 @@ http://www.javacoffeebreak.com/faq/faq0084.html
 D
 http://www.artima.com/objectsandjava/webuscript/CompoInherit1.html
 
-36.   -  Generics Knowledge
+36.  Generics Knowledge
 Given the declaration below, the myCollection will only accept...
 
 Collection myCollection;
@@ -256,7 +256,7 @@ Collection myCollection;
     D        ...instances of the class '?'.
 选b
 
-37.   -  JUnit
+37.  JUnit
 Which of the following describes the purpose of JUnit?
 A        It is a framework to help with writing unit tests for your code.
 B        It is a framework to help with writing code involving unit conversions.
@@ -265,7 +265,7 @@ D        It is a framework to convert all days/dates in your code to June.
 
 选a
 
-38.   -  AtomicInteger Class
+38.  AtomicInteger Class
 Which of the following statements about the AtomicInteger class is TRUE?
 A        It is useful for nuclear computations.
 B        It is a subclass of Integer.
@@ -274,7 +274,7 @@ D        It allows for atomic update and read operations on an integ
 
 选d
 
-39.   -  Final Keyword
+39.  Final Keyword
 The keyword "final" can be applied to which of the following?
 A        a variable
 B        a method
