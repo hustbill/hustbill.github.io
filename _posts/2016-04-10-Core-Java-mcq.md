@@ -9,15 +9,14 @@ categories: jekyll update
 6.  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
 
-    A when you need access to the index of the current element within the body of the loop
-    B. with an array
-    C. when you need to iterate an array in reverse
-    D. All of the above
+   <br />A when you need access to the index of the current element within the body of the loop
+   <br />B. with an array
+   <br />C. when you need to iterate an array in reverse
+   <br />D. All of the above
 
 
 7. Starting an Already Running Thread  
 Which of the following will happen if you try to start a thread that has already  been started?
-    
     a. it keeps running with no interruption
     b. it thrown an IllegalThreadSateException
     c. It termites and restarts
@@ -25,7 +24,6 @@ Which of the following will happen if you try to start a thread that has already
 
 8. Transient keyword
 When the keyword “transient” is applied to a viable, it ...
-
     a. .. marks it for garbage collection immediately after use
     b. …ensures every thread accessing it reads the latest value of the variable.
     c. … makes it as inaccessible from outside the class.
@@ -39,7 +37,6 @@ a. DefaultLayout  b.CardLayout  c. GridLayout  d.FlowLayout
 14. Inner Class
 An inner class can be which of the following?
 a. private,   b final   c. anonymous  d. A and C  e All of the above
-
     inner classes can be defined in four different following ways as mentioned below:
     1) Inner class
     2) Method – local inner class
@@ -50,7 +47,7 @@ a. private,   b final   c. anonymous  d. A and C  e All of the above
 15. Which of the following statements about declaring a method to be package private is TRUE?
 
 16.  Collection to Store List of Pairs
-        a. Hashmap
+     a. Hashmap
         b. Map.Entery
         c. Hashtable
         d. Properties
@@ -64,26 +61,23 @@ Which of the following is a method declared by the Object class?
 Give the list of Java Object class methods.
 
 Answer: above of all
-
-    clone() - Creates and returns a copy of this object.
-    equals() - Indicates whether some other object is "equal to" this one.
-    finalize() - Called by the garbage collector on an object when garbage collection
-            determines that there are no more references to the object.
-    getClass() - Returns the runtime class of an object.
-    hashCode() - Returns a hash code value for the object.
-    notify() - Wakes up a single thread that is waiting on this object's monitor.
-    notifyAll() - Wakes up all threads that are waiting on this object's monitor.
-    toString() - Returns a string representation of the object.
-    wait() - Causes current thread to wait until another thread invokes the notify() method
-            or the notifyAll() method for this object.
+<br />  clone() - Creates and returns a copy of this object.
+<br />  equals() - Indicates whether some other object is "equal to" this one.
+<br />  finalize() - Called by the garbage collector on an object when garbage collection
+<br />          determines that there are no more references to the object.
+<br />  getClass() - Returns the runtime class of an object.
+<br />  hashCode() - Returns a hash code value for the object.
+<br />  notify() - Wakes up a single thread that is waiting on this object's monitor.
+<br />  notifyAll() - Wakes up all threads that are waiting on this object's monitor.
+<br />  toString() - Returns a string representation of the object.
+<br />  wait() - Causes current thread to wait until another thread invokes the notify() <br />  method or the notifyAll() method for this object.
 
 19.  Which of the following is an effective way to render a variable constant?  
-
-    A        declare it as final  
-    B        declare it as static  
-    C        declare it as an enum member  
-    D        A and C  
-    E        All of the above  
+  <br /> A        declare it as final  
+  <br /> B        declare it as static  
+  <br /> C        declare it as an enum member  
+  <br /> D        A and C  
+  <br /> E        All of the above  
 
 20. Polymorphism  
 Based on the code snippet below, which of the following statements about the last line of the code, indicated by the "(X)", is TRUE?
@@ -94,8 +88,7 @@ Based on the code snippet below, which of the following statements about the las
 Based on the code snippet below, which of the following statements is FALSE?
 
 InputStreamReader ir = new BufferedReader( new FileReader( new File( "file.txt" ) ) );  
-
-    A        This buffers the characters being read in and may be more efficient than reading straight from the FileReader.
+     A        This buffers the characters being read in and may be more efficient than reading straight from the FileReader.
     B        This is useful when reading characters rather than bytes.
     C        This exhibits the use of the Decorator design pattern.
     D        This can be used to read either a stream of bytes or characters.  
@@ -107,7 +100,6 @@ http://stackoverflow.com/questions/9648811/specific-difference-between-bufferedr
 22. Auto example  
 The code snippet below is an example of which of the following?
 Long myLong = 21l;
-
     A        Autoboxing
     B        Autounboxing
     C        Autocasting
@@ -119,7 +111,6 @@ Autoboxing
 
 23.  Dynamically Combine Strings  
 To dynamically combine multiple strings into a single one in Java, you should...
-
     A        ...use the subclass String to add a constructor which takes in the contributing strings.
     B        ...use the String.join method.
     C        ...use StringBuilder.
@@ -136,7 +127,6 @@ for(String tempString:setInput){
 
 24.  Switch Statement
 Given the switch statement below, which of the following statements is FALSE?
-
     A        The expression must be of a primitive type, such as int, byte, or short.
     B        The variables 'value_1', 'value_2' etc. need to be known at compile time.
     C        The default case always comes last.
@@ -148,7 +138,6 @@ A true
 
 26.  ArrayList Capacity
 The capacity of an ArrayList...  
-
     A        ...is set to zero at initialization.
     B        ...is set to infinite at initialization.
     C        ...is at least as large as the size at initialization.
@@ -156,7 +145,6 @@ The capacity of an ArrayList...
 
 27. Reference Types  
 Which of the following class names is a legal Reference subtype in Java?  
-
     A        StrongReference
     B        GhostReference
     C        SoftReference
@@ -164,7 +152,6 @@ Which of the following class names is a legal Reference subtype in Java?
 
 28.  Supported Java Feature
 Which of the following features is supported by Java?  
-
     A        An elegant model for multiple inheritance.  
     B        The freedom from memory management.  
     C        User definable operator overloading.  
