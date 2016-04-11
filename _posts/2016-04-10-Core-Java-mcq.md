@@ -8,7 +8,6 @@ categories: jekyll update
 
 6.  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
-
   + A when you need access to the index of the current element within the body of the loop
   + B. with an array
   + C. when you need to iterate an array in reverse
@@ -17,7 +16,6 @@ In which of the following scenarios is it appropriate to use the enhanced for lo
 
 7. Starting an Already Running Thread  
 Which of the following will happen if you try to start a thread that has already  been started?  
-
    + a. it keeps running with no interruption
    + b. it thrown an IllegalThreadSateException
    + c. It termites and restarts
@@ -25,7 +23,6 @@ Which of the following will happen if you try to start a thread that has already
 
 8. Transient keyword
 When the keyword “transient” is applied to a viable, it ...  
-
     a. .. marks it for garbage collection immediately after use
     b. …ensures every thread accessing it reads the latest value of the variable.
     c. … makes it as inaccessible from outside the class.
