@@ -1,18 +1,11 @@
----
-layout: post
-title:  "Core Java concept questions"
-date:   2016-04-10 15:48:08
-categories: jekyll update
----
-
-*6- Enhance vs-Traditional For Loop*  
+*6. Enhance vs-Traditional For Loop*  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?  
-A-when you need access to the index of the current element within the body of the loop  
-B-with an array  
-C-when you need to iterate an array in reverse  
-D-All of the above  
+A. when you need access to the index of the current element within the body of the loop  
+B. with an array  
+C. when you need to iterate an array in reverse  
+D. All of the above  
 
-*7-Starting an Already Running Thread*  
+*7. Starting an Already Running Thread*  
 Which of the following will happen if you try to start a thread that has already  been started?   
   a-it keeps running with no interruption  
   b-it thrown an IllegalThreadSateException  
@@ -44,13 +37,11 @@ a-private,   b final   c-anonymous  d-A and C  e All of the above
 15-Which of the following statements about declaring a method to be package private is TRUE?  
 
 *16- Collection to Store List of Pairs*
-  ```code
      a-Hashmap
         b-Map.Entery
         c-Hashtable
         d-Properties
         e-TreeMap
-        ```
 
 17-In a try/catch/finally block, finally gets called.  
 Update: Finally ALWAYS gets executed, no matter what happens in the try or catch block (fail, return, exception, finish etc.).
@@ -60,6 +51,7 @@ Which of the following is a method declared by the Object class?
 Give the list of Java Object class methods.  
 
 Answer: above of all  
+[*backup knowledge*]
  clone() - Creates and returns a copy of this object.  
  equals() - Indicates whether some other object is "equal to" this one.  
  finalize() - Called by the garbage collector on an object when garbage collection  
@@ -85,13 +77,14 @@ Based on the code snippet below, which of the following statements about the las
 *21-Core Library Knowledge*    
 Based on the code snippet below, which of the following statements is FALSE?  
 ```java
-InputStreamReader ir = new BufferedReader( new FileReader( new File( "file.txt" ) ) );```    
-     A        This buffers the characters being read in and may be more efficient than reading straight from the FileReader.  
+InputStreamReader ir = new BufferedReader( new FileReader( new File( "file.txt" ) ) );
+```    
+A        This buffers the characters being read in and may be more efficient than reading straight from the FileReader.  
     B        This is useful when reading characters rather than bytes.  
     C        This exhibits the use of the Decorator design pattern.  
     D        This can be used to read either a stream of bytes or characters-   
 Answer: D  
-[bufferReader](http://stackoverflow.com/questions/9648811/specific-difference-between-bufferedreader-and-filereader)
+[Ref: BufferReader](http://stackoverflow.com/questions/9648811/specific-difference-between-bufferedreader-and-filereader)
 
 
 22-Auto example     
@@ -101,7 +94,7 @@ Long myLong = 21l;
     B        Autounboxing  
     C        Autocasting  
     D        Autoinstancing  
-[Autoboxing](http://stackoverflow.com/questions/20922867/java-class-long-method-longvalue)  
+[Ref: Autoboxing](http://stackoverflow.com/questions/20922867/java-class-long-method-longvalue)  
 
 Autoboxing  
 
@@ -160,7 +153,7 @@ Which of the following is considered a marker interface?
     C        Iterable    
     D        Comparable    
 
-Marker interface is also called tag interface by some java gurus-In java we have the following major marker interfaces as under:  
+_Marker interface_ is also called tag interface by some java gurus-In java we have the following major marker interfaces as under:  
     + Searilizable interface  
     + Cloneable interface  
     + Remote interface  
@@ -173,11 +166,11 @@ You are given a requirement to create a read-only list-Which of the following ap
     C  
     D        Declare the list final.  
  
- In Java you can use Collections.unModifiableList() method  to create read only List ,   Collections.unmodifiableSet() for creating read-only Set like read only HashSet and similarly creating a read   only Map in Java, as shown in below example-Any modification in read only List will result in   java.lang.UnSupportedOperationException in Java.  
+ In Java you can use Collections.unModifiableList() method  to create read only List ,   Collections.unmodifiableSet() for creating read-only Set like read only HashSet and similarly creating a read   only Map in Java, as shown in below example-Any modification in read only List will result in   *java.lang.UnSupportedOperationException* in Java.  
 
 31- Finding Errors  
 Which of the following indicates what is WRONG with the statement below?  
-    A  
+    A    N/A  
     B        The left hand side allows objects to be stored in the collection, while the right hand side   restricts collection members to being strings.  
     C        An ArrayList cannot be a list.  
     D        All of the above  
@@ -189,6 +182,7 @@ B        RuntimeException
 C        CheckedException  
 D        Exception  
 Answer: C  
+
 There are two special cases: Error and RuntimeException: these two classes (and their subclasses) are considered unchecked exceptions, and are either frequent enough or catastrophic enough that you do not need to declare them in throws clauses-Everything else is a checked exception, and is ususally a subclass of Exception; these exceptions have to be handled or declared.  
 
 *33- Concurrent Usage*  
@@ -198,7 +192,7 @@ B        Collections.unmodifiableList( new ArrayList() );
 C        Collections.synchronizedList( new ArrayList() );  
 D        new ConcurrentLinkedQueue();  
 Answer: a  
-[concurrent list](http://stackoverflow.com/questions/561671/best-way-to-control-concurrent-access-to-java-collections)  
+[Ref: concurrent list](http://stackoverflow.com/questions/561671/best-way-to-control-concurrent-access-to-java-collections)  
 
 *34- Java Interfaces*  
 Which of the following statements about interfaces in Java is TRUE?  
@@ -208,7 +202,7 @@ C        They can contain method implementations.
 D        A and B  
 E        All of the above  
 Answer: D  
-[Java Interface](https://en.wikipedia.org/wiki/Interface_%28Java%29#Defining_an_interface)    
+[Ref: Java Interface](https://en.wikipedia.org/wiki/Interface_%28Java%29#Defining_an_interface)    
 
 35- Abstract Classes  
 Which of the following indicates when you can use abstract classes?  
@@ -218,8 +212,8 @@ C        when designing for inheritance where the final implementations are not 
 D        B and C  
 E        All of the above  
 Answer: D
-[Abstract class](http://www.javacoffeebreak.com/faq/faq0084.html)  
-[Composition](http://www.artima.com/objectsandjava/webuscript/CompoInherit1.html)  
+[Ref: Abstract class](http://www.javacoffeebreak.com/faq/faq0084.html)  
+[Ref: Composition](http://www.artima.com/objectsandjava/webuscript/CompoInherit1.html)  
 
 _36- Generics Knowledge_  
 Given the declaration below, the myCollection will only accept...  
@@ -253,4 +247,4 @@ A        a variable
 B        a method  
 C        a class  
 D        All of the above  
-Answer: D  
+Answer: D
