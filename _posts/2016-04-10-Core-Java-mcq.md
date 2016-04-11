@@ -8,11 +8,10 @@ categories: jekyll update
 
 6.  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
-
-   <br />A when you need access to the index of the current element within the body of the loop
-   <br />B. with an array
-   <br />C. when you need to iterate an array in reverse
-   <br />D. All of the above
+   + A when you need access to the index of the current element within the body of the loop
+   + B. with an array
+   + C. when you need to iterate an array in reverse
+   + D. All of the above
 
 
 7. Starting an Already Running Thread  
