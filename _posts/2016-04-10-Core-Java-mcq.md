@@ -8,25 +8,30 @@ categories: jekyll update
 
 6.  Enhance vs. Traditional For Loop  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?
-  + A. when you need access to the index of the current element within the body of the loop
-  + B. with an array
-  + C. when you need to iterate an array in reverse
-  + D. All of the above
-
+```code
+ A. when you need access to the index of the current element within the body of the loop
+ B. with an array
+ C. when you need to iterate an array in reverse
+D. All of the above
+```
 
 7. Starting an Already Running Thread  
 Which of the following will happen if you try to start a thread that has already  been started?  
-   + a. it keeps running with no interruption
-   + b. it thrown an IllegalThreadSateException
-   + c. It termites and restarts
-   + d. It restarts if it was terminated.
+  ```
+  > a. it keeps running with no interruption
+  > b. it thrown an IllegalThreadSateException
+  > c. It termites and restarts
+  > d. It restarts if it was terminated.
+```
 
 8. Transient keyword
 When the keyword “transient” is applied to a viable, it ...  
+```code   
     a. .. marks it for garbage collection immediately after use
     b. …ensures every thread accessing it reads the latest value of the variable.
     c. … makes it as inaccessible from outside the class.
     d. … excludes it from serialization.
+```
 选的d
 
 10. Swing Layouts
@@ -36,21 +41,25 @@ a. DefaultLayout  b.CardLayout  c. GridLayout  d.FlowLayout
 14. Inner Class
 An inner class can be which of the following?
 a. private,   b final   c. anonymous  d. A and C  e All of the above
+```code
     inner classes can be defined in four different following ways as mentioned below:
     1) Inner class
     2) Method – local inner class
     3) Anonymous inner class
     4) Static nested class
      Inner class acts as a member of the enclosing class and can have any access modifiers: abstract, final, public, protected, private, static.
+     ```
 
 15. Which of the following statements about declaring a method to be package private is TRUE?
 
 16.  Collection to Store List of Pairs
+  ```code
      a. Hashmap
         b. Map.Entery
         c. Hashtable
         d. Properties
         e. TreeMap
+        ```
 
 17. In a try/catch/finally block, finally gets called.
 Update: Finally ALWAYS gets executed, no matter what happens in the try or catch block (fail, return, exception, finish etc.).
