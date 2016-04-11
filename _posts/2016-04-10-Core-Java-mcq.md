@@ -5,33 +5,33 @@ date:   2016-04-10 15:48:08
 categories: jekyll update
 ---
 
-6- Enhance vs-Traditional For Loop  
+*6- Enhance vs-Traditional For Loop*  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?  
 A-when you need access to the index of the current element within the body of the loop  
 B-with an array  
 C-when you need to iterate an array in reverse  
 D-All of the above  
 
-7-Starting an Already Running Thread  
+*7-Starting an Already Running Thread*  
 Which of the following will happen if you try to start a thread that has already  been started?   
   a-it keeps running with no interruption  
   b-it thrown an IllegalThreadSateException  
   c-It termites and restarts  
   d-It restarts if it was terminated- 
 
-8-Transient keyword  
+*8-Transient keyword*  
 When the keyword “transient” is applied to a viable, it ..-   
     a-.-marks it for garbage collection immediately after use  
     b-…ensures every thread accessing it reads the latest value of the variable- 
     c-… makes it as inaccessible from outside the class- 
     d-… excludes it from serialization- 
-选的d
+Answer: D  
 
-10-Swing Layouts  
+*10-Swing Layouts*  
 which of the following layouts does Swing use by default?  
 a-DefaultLayout  b.CardLayout  c-GridLayout  d.FlowLayout  
   
-14-Inner Class  
+*14-Inner Class*  
 An inner class can be which of the following?  
 a-private,   b final   c-anonymous  d-A and C  e All of the above  
     inner classes can be defined in four different following ways as mentioned below:  
@@ -43,7 +43,7 @@ a-private,   b final   c-anonymous  d-A and C  e All of the above
 
 15-Which of the following statements about declaring a method to be package private is TRUE?  
 
-16- Collection to Store List of Pairs
+*16- Collection to Store List of Pairs*
   ```code
      a-Hashmap
         b-Map.Entery
@@ -55,7 +55,7 @@ a-private,   b final   c-anonymous  d-A and C  e All of the above
 17-In a try/catch/finally block, finally gets called.  
 Update: Finally ALWAYS gets executed, no matter what happens in the try or catch block (fail, return, exception, finish etc.).
 
-18-Object class methods  
+*18-Object class methods*  
 Which of the following is a method declared by the Object class?  
 Give the list of Java Object class methods.  
 
@@ -71,28 +71,27 @@ Answer: above of all
  toString() - Returns a string representation of the object.  
  wait() - Causes current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object.  
 
-19- Which of the following is an effective way to render a variable constant?    
+*19- Which of the following is an effective way to render a variable constant?*    
   A        declare it as final    
   B        declare it as static    
   C        declare it as an enum member    
   D        A and C    
   E        All of the above    
 
-20-Polymorphism    
+*20-Polymorphism*    
 Based on the code snippet below, which of the following statements about the last line of the code, indicated by the "(X)", is TRUE?  
 
 
-21-Core Library Knowledge    
+*21-Core Library Knowledge*    
 Based on the code snippet below, which of the following statements is FALSE?  
-
-InputStreamReader ir = new BufferedReader( new FileReader( new File( "file.txt" ) ) );    
+```java
+InputStreamReader ir = new BufferedReader( new FileReader( new File( "file.txt" ) ) );```    
      A        This buffers the characters being read in and may be more efficient than reading straight from the FileReader.  
     B        This is useful when reading characters rather than bytes.  
     C        This exhibits the use of the Decorator design pattern.  
     D        This can be used to read either a stream of bytes or characters-   
-选a    
-
-http://stackoverflow.com/questions/9648811/specific-difference-between-bufferedreader-and-filereader  
+Answer: D  
+[bufferReader](http://stackoverflow.com/questions/9648811/specific-difference-between-bufferedreader-and-filereader)
 
 
 22-Auto example     
@@ -102,8 +101,7 @@ Long myLong = 21l;
     B        Autounboxing  
     C        Autocasting  
     D        Autoinstancing  
-
-http://stackoverflow.com/questions/20922867/java-class-long-method-longvalue  
+[Autoboxing](http://stackoverflow.com/questions/20922867/java-class-long-method-longvalue)  
 
 Autoboxing  
 
@@ -168,7 +166,7 @@ Marker interface is also called tag interface by some java gurus-In java we have
     + Remote interface  
     + ThreadSafe interface    
 
-30- Read-Only List  
+*30- Read-Only List*  
 You are given a requirement to create a read-only list-Which of the following approaches should you use?  
     A        Create members as final and add them to the list.  
     B        Build your list and wrap it with a call to Collections.unmodifiableList().  
@@ -184,7 +182,7 @@ Which of the following indicates what is WRONG with the statement below?
     C        An ArrayList cannot be a list.  
     D        All of the above  
 
-32- Declared Throwables  
+*32- Declared Throwables*  
 Which of the following Throwables needs to be declared?  
 A        Error  
 B        RuntimeException  
@@ -193,16 +191,16 @@ D        Exception
 Answer: C  
 There are two special cases: Error and RuntimeException: these two classes (and their subclasses) are considered unchecked exceptions, and are either frequent enough or catastrophic enough that you do not need to declare them in throws clauses-Everything else is a checked exception, and is ususally a subclass of Exception; these exceptions have to be handled or declared.  
 
-33- Concurrent Usage  
+*33- Concurrent Usage*  
 Which of the following is the LEAST suitable for concurrent usage?  
 A        new ArrayList();  
 B        Collections.unmodifiableList( new ArrayList() );  
 C        Collections.synchronizedList( new ArrayList() );  
 D        new ConcurrentLinkedQueue();  
 Answer: a  
-http://stackoverflow.com/questions/561671/best-way-to-control-concurrent-access-to-java-collections  
+[concurrent list](http://stackoverflow.com/questions/561671/best-way-to-control-concurrent-access-to-java-collections)  
 
-34- Java Interfaces  
+*34- Java Interfaces*  
 Which of the following statements about interfaces in Java is TRUE?  
 A        They can contain variable definitions.  
 B        They can be extended by subinterfaces.  
@@ -210,7 +208,7 @@ C        They can contain method implementations.
 D        A and B  
 E        All of the above  
 Answer: D  
-https://en.wikipedia.org/wiki/Interface_%28Java%29#Defining_an_interface    
+[Java Interface](https://en.wikipedia.org/wiki/Interface_%28Java%29#Defining_an_interface)    
 
 35- Abstract Classes  
 Which of the following indicates when you can use abstract classes?  
@@ -220,10 +218,10 @@ C        when designing for inheritance where the final implementations are not 
 D        B and C  
 E        All of the above  
 Answer: D
-http://www.javacoffeebreak.com/faq/faq0084.html  
-http://www.artima.com/objectsandjava/webuscript/CompoInherit1.html  
+[Abstract class](http://www.javacoffeebreak.com/faq/faq0084.html)  
+[Composition](http://www.artima.com/objectsandjava/webuscript/CompoInherit1.html)  
 
-36- Generics Knowledge  
+_36- Generics Knowledge_  
 Given the declaration below, the myCollection will only accept...  
 
 Collection myCollection;    
@@ -249,7 +247,7 @@ C        It supports the autoboxing of numerical values.
 D        It allows for atomic update and read operations on an integ  
 Ansewer: D  
 
-39- Final Keyword  
+_39- Final Keyword_  
 The keyword "final" can be applied to which of the following?  
 A        a variable  
 B        a method  
