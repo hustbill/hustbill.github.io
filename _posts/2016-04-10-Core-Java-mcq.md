@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Core Java concept questions"
-  date:   2016-04-10 15:48:08
+date:   2016-04-10 15:48:08
 categories: jekyll update
 ---
   
