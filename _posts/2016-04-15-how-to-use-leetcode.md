@@ -5,26 +5,26 @@ date: 2016-04-15 09:16:00
 categories: jekyll update
 ---
 
-#How to use leetcode?  
+# How to use leetcode?  
 (Disclaimer : this is the approach I took, and it helped me. The timeframe could vary depending on the individual skills) 
 
-#Stage - 1 (Easy and Medium : 85+ and 165+ problems)
+# Stage - 1 (Easy and Medium : 85+ and 165+ problems)
 - Select your favorite topic, solve easy ones, OR sort by acceptance rate.
 - After easy ones are solved, move to other topic if you're exhausted, OR solve medium ones. Don't even attempt for the hard ones if you're not comfortable with easy or medium. These problems are carefully tagged as easy-medium-hard.
 - It is very important to take a look at how other people have written the code efficiently.
 
-#Stage - 2 (Hard Problems : 75+ problems)
+# Stage - 2 (Hard Problems : 75+ problems)
 - After a few months, you'll be done with Stage - 1.
 - Pick a topic, solve hard problems.
 - It's very likely that you'll not be able to come up with a clean solution, but spend some time at least 20 minutes on a problem in coming up with a solution.
 - DO NOT complete stage - 2 if you're spending too much time on hard problems. Move to stage - 3.
 
-#Stage - 3 (Mixed Mode)
+# Stage - 3 (Mixed Mode)
 - It's important to realize that picking a topic will make it really easy to come up with the right solution quickly. So DO NOT go by topics in this stage.
 - Instead, go by numerical order from the main page. You'll realize that you'd have forgotten some of the ways you've solved medium/hard problems. This approach will make sure that you're thinking of attacking the problem from scratch.
 - You don't have to code them again, but it's important to go through the tricks that you might have used.
 
-#Stage - 4 (SUBSCRIBE - Very important)
+# Stage - 4 (SUBSCRIBE - Very important)
 - Finish off all the hard problems.
 - Use the 'related problems' button very well, to understand why they're related.
 - By this time, you'd have realized how much you're in love with leetcode and it's community. You can contribute too!! Try to get a feeling of being part of it, since it's something that has helped you get a good job, and given you some confidence. You can contribute in some of the ways:
