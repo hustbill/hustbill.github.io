@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "硅谷公司分析与技术准备"
 date: 2016-04-16 21:00:00
 categories: jekyll update
 ---
@@ -95,10 +95,10 @@ spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问
 
 任何事情做三遍，就是重复。 教会了他人，你才真正掌握了这个知识
 
-每年9月份就开始放出全年的headcounter 越早投越好！
-要总结公司的套路
-Uber： 也是需要快速把代码快速写出来
+每年9月份就开始放出全年的headcounter 越早投越好！  
+要总结公司的套路，例如Uber，虽说考察系统设计为主，但也是需要快速把代码快速写出来  
 
-九章算法的： 系统设计班
-推荐上九章的算法版
+九章算法与系统设计班， 推荐上九章的算法班
+
+Linkedn上找人refer ［加好友神器］(https://github.com/LearnerChao/LinkDriver)
 
