@@ -5,36 +5,6 @@ date: 2016-04-16 21:00:00
 categories: jekyll update
 ---
 
-## Java 知识点
-Java 语言特性:  
-Java 与 c ++ 区别;  
-abstract class vs interface;   
-shallow copy/deep copy;   
-pass by reference/ pass by value;   
-hashcode()/ equals();   
-
-Java 一些关键字:  
-final, static;   
-final/finalize/finally;   
-checked/unchecked exception;   
-java 8种primitive type;  
-overriding vs overload;   
-
-public static void main(string args[])    
-每个关键字的作用     
-
-[Mingche Su 链接](http://zhuanlan.zhihu.com/p/20545626)
-
-## 刷题与准备  
-1. 刷题刷题刷题，不断地重复  
-2. 做题的同时需要总结，把知识点融会贯通，bitteriger  
-3. 加入一个团队，线下刷题小组，找到小伙伴  
-4. 了解面试流程和面试难度 ： 每个公司的风格不一样  
-5. 了解公司文化和work－life  balance :  fit  in group  
-6. 了解绿卡政策  
-7. 了解package水平 http://www.h1bdata.info/   LCA 移民局的数据  
-8. 食堂食堂食堂 公司的食堂 好的饮食水平  
-
 ##  公司分析
 
 ### Groupon
@@ -85,6 +55,16 @@ spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问
 每年hiring 1000工程师 ，硅谷 一年hire200人
 当你面试的时候，你比同期的人优秀就好了。 每10个人 每16个 会有机会拿到offer
 
+## 刷题与准备  
+1. 刷题刷题刷题，不断地重复  
+2. 做题的同时需要总结，把知识点融会贯通，bitteriger  
+3. 加入一个团队，线下刷题小组，找到小伙伴  
+4. 了解面试流程和面试难度 ： 每个公司的风格不一样  
+5. 了解公司文化和work－life  balance :  fit  in group  
+6. 了解绿卡政策  
+7. 了解package水平 http://www.h1bdata.info/   LCA 移民局的数据  
+8. 食堂食堂食堂 公司的食堂 好的饮食水平  
+
 ## 面试心得
 1. 刷题时获得offer的充分条件，不定是必要条件
 2. 通过面试一步步积累信心： 不断地面试，拿到第一份offer 对增加信心非常重要
@@ -92,6 +72,27 @@ spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问
 4. 对准备面试者的建议： 线下刷题小组，bittiger  大家一起跑，有志青年一起向前冲
 5. 如何投简历：扩充linkedin的联系人，第一时间把简历投递出去
 6. 刷题的秘诀：用生长学习法重复！教会他人！
+
+
+## Java 知识点
+Java 语言特性:  
+Java 与 c ++ 区别;  
+abstract class vs interface;   
+shallow copy/deep copy;   
+pass by reference/ pass by value;   
+hashcode()/ equals();   
+
+Java 一些关键字:  
+final, static;   
+final/finalize/finally;   
+checked/unchecked exception;   
+java 8种primitive type;  
+overriding vs overload;   
+
+public static void main(string args[])    
+每个关键字的作用     
+
+[Mingche Su 链接](http://zhuanlan.zhihu.com/p/20545626)
 
 任何事情做三遍，就是重复。 教会了他人，你才真正掌握了这个知识
 
