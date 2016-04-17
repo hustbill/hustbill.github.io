@@ -101,5 +101,5 @@ public static void main(string args[])
 
 九章算法与系统设计班， 推荐上九章的算法班
 
-Linkedn上找人refer ［加好友神器］(https://github.com/LearnerChao/LinkDriver)
+Linkedn上找人内推，[加好友神器](https://github.com/LearnerChao/LinkDriver)
 
