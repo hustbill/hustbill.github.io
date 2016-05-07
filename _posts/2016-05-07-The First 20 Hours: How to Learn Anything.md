@@ -4,7 +4,7 @@ title: "读《关键20小时，快速学会任何技能》"
 date: 2016-05-06 08:00:00
 categories: jekyll update
 ---
-TED大热演讲者、真正的“学霸”－乔希•考夫曼（Josh Kaufman） 在TED上的演讲：How to learn anything，这个TED大热之后，他又出一本同名书籍：The First 20 Hours: How to Learn Anything 。没看过这个TED的，点击查看，最好在Wifi的环境下观看：[http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html](http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html) 
+TED大热演讲者、“学霸”－乔希•考夫曼（Josh Kaufman） 在TED上的演讲：How to learn anything，这个TED大热之后，他又出一本同名书籍：The First 20 Hours: How to Learn Anything 。没看过这个TED的，点击查看，最好在Wifi的环境下观看：[http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html](http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html) 
 
 乔希•考夫曼向你传授一种在很短时间内快速掌握一门新技能的方法：既不用太痛苦，又不用花太多时间和精力。这套简单易学的方法正是基于他自己的技能学习实践总结出来的。他指导大家如何把这些方法运用到具体的技能实践中：向你展示他自己如何在20小时以内（每天学习90分钟）便学会6个全新的技能——瑜伽、编程、盲打、围棋、弹琴、冲浪。
 如果你只是想掌握某项技能，使其为你所用，而非成为这项技能的世界级大师，那么本书就是为你准备的！
@@ -65,7 +65,8 @@ TED大热演讲者、真正的“学霸”－乔希•考夫曼（Josh Kaufman�
 7、我练习直至能凭记忆完成整个序列列动作，这大约需要25分钟的时间
 
 
-##其他书评
+其他书评
+=========
 - 20小时 VS 教育，培训等如果20小时就能获得一门新技能，那么要教育干嘛？
 这里需要注意的是，20小时得到的是满足你特定需要的新技能获得，有点实践出真知的意思，但是不能取代真正的教育学习，教育学习固然会有一些死板，僵化，不与时俱进的缺点在里面，但是可以培养自我学习，自我修剪。，自我计划的基础在里面。20小时的最后一针强心剂直接说结论，我们的大脑是可塑的，我们的思维是可成长的(这些都是有理论支持的哦)，The more you practise, the more efficient, effective and automatic the skill becomes，所以这不是夸夸其谈。当然更重要的是不要让这个20小时约束你，这个仅仅是你转变的开端。
 
