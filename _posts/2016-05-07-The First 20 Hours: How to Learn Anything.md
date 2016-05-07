@@ -54,12 +54,12 @@ TED大热演讲者、“学霸”－乔希•考夫曼（Josh Kaufman） 在TED�
 ### 技能实践 ###
 作者在书中展示他自己如何在20小时以内（每天学习90分钟）便学会6个全新的技能——瑜伽、编程、盲打、围棋、弹琴、冲浪，分享如何应用这些方法到具体的技能实践中。 作者提到6个技能花了一年时间，但个人感觉这很明显是取巧，这六个技能，除了弹琴（尤克里里）、冲浪我不会，其它的四项都会，剩下的2个技能如果想学的话，冲浪最多也就需要几个小时，弹琴（尤克里里）的时间会长一点，估计20-30小时也足够了。过段时间，我找个新的技能尝试按20小时的理论来记录和练习一下，看看20小时之后，能学到什么水平。
 
-###其他书评  
+### 其他书评  
 20小时 VS 教育，培训等如果20小时就能获得一门新技能，那么要教育干嘛？   
 这里需要注意的是，20小时得到的是满足你特定需要的新技能获得，有点实践出真知的意思，但是不能取代真正的教育学习，教育学习固然会有一些死板，僵化，不与时俱进的缺点在里面，但是可以培养自我学习，自我修剪。，自我计划的基础在里面。20小时的最后一针强心剂直接说结论，我们的大脑是可塑的，我们的思维是可成长的(这些都是有理论支持的哦)，The more you practise, the more efficient, effective and automatic the skill becomes，所以这不是夸夸其谈。当然更重要的是不要让这个20小时约束你，这个仅仅是你转变的开端。  
 
 
-###附录一、[十步快速技能获得法](https://book.douban.com/review/7686245/)
+### 附录一、[十步快速技能获得法](https://book.douban.com/review/7686245/) ###
    可能提到的一些步骤看上去很平常，甚至是老生常谈，但相信我，仅仅知道这些步骤是不够的，重点的是运用。
 1.选好方向(Choose a lovable project)关键词是兴趣，某项新技能越勾的你欲火分身就越能很快掌握。
 2.专一投入(Focus your energy on one skill at a time)关键词是专一，不要膨胀到自己是可以并行的，是可以灵活切换的。
@@ -74,7 +74,7 @@ TED大热演讲者、“学霸”－乔希•考夫曼（Josh Kaufman） 在TED�
 
 ![ Quantity and speed](http://upload-images.jianshu.io/upload_images/1647554-c4055aab3d380226.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![The First 20 Hours: How to Learn Anything](http://upload-images.jianshu.io/upload_images/1647554-df681684555709c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###附录二、十条高效学习原则
+### 附录二、十条高效学习原则 ###
 类似磨刀不误砍柴工和好钢用在刀刃上的意思，让我们的快速技能掌握更加有效：
 1.信息收集(Research the skill and related topics)类似于预研阶段，尽快收集到足够多的信息用于了解技能的全貌，不需要花费很长时间，千万不要过分投入忘记了重点。
 2.接受困惑(Jump in over your head)经过预研后会发现更多的困惑，没关系很正常，保持练习可以消除困惑的信念即可。
