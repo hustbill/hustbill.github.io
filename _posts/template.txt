@@ -1,6 +1,10 @@
 ---
 layout: post
 title: ""
+<<<<<<< HEAD
 date: 2016-05- 11:50:00
+=======
+date: 2016-05-07 08:00:00
+>>>>>>> 41eb9de2451a06d49872610af0f10d0a2e468a17
 categories: jekyll update
 ---

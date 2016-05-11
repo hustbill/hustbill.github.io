@@ -1,0 +1,105 @@
+---
+layout: post
+title: "硅谷公司分析与技术准备"
+date: 2016-04-16 21:00:00
+categories: jekyll update
+---
+
+##  公司分析
+
+### Groupon
+地理位置好，有午餐，面试难度不大，offer高适合match ， 是一个非常好的起点
+对在职跳槽，bar有点高， 把自己正在做的东西让你完成
+
+### Expedia
+在sf里， java house， 难度中等。 Leetcode中等难度
+网上面经重复率 比较高
+
+### Yelp
+在sf  写python 写到high， 有食堂，难度中等
+面经有重复， 重复概率有点高
+
+### Oracle
+稳定公司，地理位置优越，付费午餐，名校情结，难度随机， java house， jvm要了解得比较深刻。 绿卡政策好
+
+### Salesforce
+成长公司， 类java house， 难度较高，package 和 work－life balance 优秀
+一道题，考察了 所有数据结构 priority queue, stack， 股票比较高
+五轮面试， 两个面试官同时面， 绿卡政策好 sf 市内  ， view比较好 对新生好
+
+### Amazon
+稳定公司，绿卡政策不好，门槛看岗位，难度随机。  做oa
+幸运的话，给视频面试。 直接给offer
+或去西雅图 参加group interview 。 通过
+套路比较稳定， 面经重复率高。 难度有点高。
+AWS team  或者 performance 组  整体 题目难度 有点广， 都有些涉及 面试强度有点大
+
+### Uber
+最火的startup 难度极高， 无work－life balance 招人多
+四轮都是系统设计，
+如果design uber ， wechat  很清晰的思路，如果能进去 就是一个很好的平台。
+面试的45分钟  一半时间要涉及你的简历。要对家里东西很熟悉
+spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问题
+信息量 高 对大脑的存货要求高 。 平时要懂这些知识点
+你为什么选择uber  ， 从自身观念来展开
+天下武功 唯快不破    只关心你在公司能产出多少东西。 很快捷地deliver出来。
+不太适合new graduate ， 如果你的engineering能力不强的话， 你可能遇到知识点不足，需要花很多时间的来学习和弥补
+如果你想成为百万富翁，可以试试这家公司
+
+### Google
+难度极高，算法造诣要求极高
+完全不看你的简历。  要对算法有一定地造诣。
+刷leetcode lintcode 一定要三四遍 达到融汇贯通的程度。
+在写code过程中 不断地拍照。 对代码clean的程度要求高。平时要多家训练
+从medium 到hard的程度。  对自己熟知的算法和da ta structure 手到擒来
+每年hiring 1000工程师 ，硅谷 一年hire200人
+当你面试的时候，你比同期的人优秀就好了。 每10个人 每16个 会有机会拿到offer
+
+## 刷题与准备  
+1. 刷题刷题刷题，不断地重复  
+2. 做题的同时需要总结，把知识点融会贯通，bitteriger  
+3. 加入一个团队，线下刷题小组，找到小伙伴  
+4. 了解面试流程和面试难度 ： 每个公司的风格不一样  
+5. 了解公司文化和work－life  balance :  fit  in group  
+6. 了解绿卡政策  
+7. 了解package水平 http://www.h1bdata.info/   LCA 移民局的数据  
+8. 食堂食堂食堂 公司的食堂 好的饮食水平  
+
+## 面试心得
+1. 刷题时获得offer的充分条件，不定是必要条件
+2. 通过面试一步步积累信心： 不断地面试，拿到第一份offer 对增加信心非常重要
+3. startup vs 大公司 ： uber 每个季度裁员5% ， 大公司可以学得东西多，会做比较多的maintenance job
+4. 对准备面试者的建议： 线下刷题小组，bittiger  大家一起跑，有志青年一起向前冲
+5. 如何投简历：扩充linkedin的联系人，第一时间把简历投递出去
+6. 刷题的秘诀：用生长学习法重复！教会他人！
+
+
+## Java 知识点
+Java 语言特性:  
+Java 与 c ++ 区别;  
+abstract class vs interface;   
+shallow copy/deep copy;   
+pass by reference/ pass by value;   
+hashcode()/ equals();   
+
+Java 一些关键字:  
+final, static;   
+final/finalize/finally;   
+checked/unchecked exception;   
+java 8种primitive type;  
+overriding vs overload;   
+
+public static void main(string args[])    
+每个关键字的作用     
+
+[Mingche Su 链接](http://zhuanlan.zhihu.com/p/20545626)
+
+任何事情做三遍，就是重复。 教会了他人，你才真正掌握了这个知识
+
+每年9月份就开始放出全年的headcounter 越早投越好！  
+要总结公司的套路，例如Uber，虽说考察系统设计为主，但也是需要快速把代码快速写出来  
+
+九章算法与系统设计班， 推荐上九章的算法班
+
+Linkedn上找人内推，[加好友神器](https://github.com/LearnerChao/LinkDriver)
+
