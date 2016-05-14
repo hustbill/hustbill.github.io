@@ -213,7 +213,8 @@ Pojo  { 
 obj.instanceOf();
 
 2). How to deal with PoJO, refer to how to get fields from a pojo dynamically
-You may use java reflection. For simplicity I assume your Employee calss only contains int field. But you can use the similar rules used here for getting float, double or long value. Here is a complete code -
+You may use java reflection. For simplicity I assume your Employee calss only contains int field. But you can use the similar rules used here for getting float, double or long value.
+
 ```java
 package com.hustbill;
 
