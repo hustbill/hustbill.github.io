@@ -63,7 +63,7 @@ lulei 是华人工程师，给我讲了公司的一些情况，一起吃饭，�
 Alan (Software Engineer)1:00 - 2:00
 
 出了两道题
-1. isValidXml (List<Tag> list)
+1. isValidXml (List<Tag> list)
 ```java
 class  Tag {
     String  getTageName();  // return the tag, ex, html
@@ -73,19 +73,20 @@ class  Tag {
 ```
 <html> <body> </body> </html>  
 这道题很类似LeetCode [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 ```java
 isValidXml (List<Tag> list ) {
-  Stack<Tag> st = new Stack<Tag>();
-  for (Tag tag : list ) {
-     if ( tag.isOpen()) {
-          st.push(tag.getTagName());
-     }
-    if (tag.isClose()  && st.peek() == tag.getTagName()) {
-       st.pop();
+  Stack<Tag> st = new Stack<Tag>();
+  for (Tag tag : list ) {
+    if ( tag.isOpen()) {
+        st.push(tag.getTagName());
+    }
+    if (tag.isClose()  && st.peek() == tag.getTagName()) {
+     st.pop();
      } else {
       return false;
      }
-  }
+ }
   return st.size() == 0; 
 }
 ```
@@ -254,7 +255,9 @@ public class PojoDemo {
 	}
 
 }
- ```
+
+```
+
 ## 第四个是 Evance
 Sr. Software Engineer 14:40 - 15:30
 
