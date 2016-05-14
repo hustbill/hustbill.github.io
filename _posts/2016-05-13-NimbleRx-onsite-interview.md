@@ -1,3 +1,11 @@
+---
+layout: post
+title: "NimbleRx onsite interview."
+date: 2016-05-07 08:00:00
+categories: jekyll update
+---
+
+
 ## 第一个面试工程师
 Dana (Software Engineer) 8:30 - 9:45
 很资深的工程师，做过开发和管理， 用过c++， python 之类的开发语言。 现在开始转作java开发， 一开始给我讲了NimbleRx 公司的系统架构和她负责那一块东西。
