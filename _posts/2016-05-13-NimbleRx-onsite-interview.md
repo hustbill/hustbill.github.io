@@ -1,3 +1,11 @@
+---
+layout: post
+title: "NimbleRx onsite interview."
+date: 2016-05-13 20:00:00
+categories: jekyll update
+---
+
+
 ## 第一个面试工程师
 Dana (Software Engineer) 8:30 - 9:45
 很资深的工程师，做过开发和管理， 用过c++， python 之类的开发语言。 现在开始转作java开发， 一开始给我讲了NimbleRx 公司的系统架构和她负责那一块东西。
@@ -13,22 +21,18 @@ Dana (Software Engineer) 8:30 - 9:45
 ## 第二个面试工程师
 Amy (Software Engineer) 9:45 - 1100  (7年工作经验） qa出身，IBM干过， 熟悉db2
 
-主要问了很多测试的问题
-
-例如，Textbox 
-
-各种测试的项目
+主要问了很多测试的问题，各种测试的项目
 
 1.test scenario : pharmacy, doctor, patient, driver , 的流程， 如何测试， 怎样保证正确性  
 
      take picture 来验证是否收到货
 
-2. test an user registration page:  username and password,  username is an email address,  password have a list of limitation 
-    - least 6 characters,  
-    - at least one Capital character, 
-    - 1 number
-    - 1 low case
-    - 1 special character
+2. test an user registration page:  username and password,  username is an email address, password have a list of limitation  
+    - least 6 characters  
+    - at least one Capital character  
+    - 1 number  
+    - 1 low case  
+    - 1 special character  
 
 3. test text box:  (Country, unicode , utf-8,   multi-line, 
 
@@ -55,7 +59,8 @@ lulei 是华人工程师，给我讲了公司的一些情况，一起吃饭，�
 Alan (Software Engineer)1:00 - 2:00
 
 出了两道题
-1. isValidXml (List<Tag> list)
+1. isValidXml (List<Tag> list)  
+ 
 ```java
 class  Tag {
     String  getTageName();  // return the tag, ex, html
@@ -63,29 +68,31 @@ class  Tag {
      boolean isClose();
 }
 ```
+
 <html> <body> </body> </html>  
 这道题很类似LeetCode [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 ```java
 isValidXml (List<Tag> list ) {
-  Stack<Tag> st = new Stack<Tag>();
-  for (Tag tag : list ) {
-     if ( tag.isOpen()) {
-          st.push(tag.getTagName());
-     }
-    if (tag.isClose()  && st.peek() == tag.getTagName()) {
-       st.pop();
+  Stack<Tag> st = new Stack<Tag>();
+  for (Tag tag : list ) {
+    if ( tag.isOpen()) {
+        st.push(tag.getTagName());
+    }
+    if (tag.isClose()  && st.peek() == tag.getTagName()) {
+     st.pop();
      } else {
       return false;
      }
-  }
+ }
   return st.size() == 0; 
 }
 ```
 
-2. Connect nodes at same level
-问他要了提示， 磕磕巴巴写完程序
-```java
+2.Connect nodes at same level
+问他要了提示， 磕磕巴巴写完程序  
 
+```java
 // Java program to connect nodes at same level 
 // NimbleRx coding question 
 // Date: 2016-05-12
@@ -185,7 +192,8 @@ public class ConnectedTree {
 ## 第四个面试官
 Duy (Head of Engineering) 14:00 - 14:40
 
-The interviewer asked me to sum (Collection<Object> objects). The objects are possible ( string, number, List, Set or HashMap). I need to check the objs’  type, and sum the values of the objects. Skip the strings of Objects. 
+The interviewer asked me to sum (Collection<Object> objects). The objects are possible ( string, number, List, Set or HashMap). I need to check the objs’  type, and sum the values of the objects. Skip the strings of Objects.   
+
 ```java
 Collection<Object>
 
@@ -204,7 +212,8 @@ Pojo  { 
 obj.instanceOf();
 
 2). How to deal with PoJO, refer to how to get fields from a pojo dynamically
-You may use java reflection. For simplicity I assume your Employee calss only contains int field. But you can use the similar rules used here for getting float, double or long value. Here is a complete code -
+You may use java reflection. For simplicity I assume your Employee calss only contains int field. But you can use the similar rules used here for getting float, double or long value.
+
 ```java
 package com.hustbill;
 
@@ -246,7 +255,9 @@ public class PojoDemo {
 	}
 
 }
- ```
+
+```
+
 ## 第四个是 Evance
 Sr. Software Engineer 14:40 - 15:30
 
