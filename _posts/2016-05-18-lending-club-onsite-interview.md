@@ -5,7 +5,7 @@ date: 2016-05-18 20:00:00
 categories: jekyll update
 ---
 
-## 5/5 phon interview
+5/5 phon interview
 
 ## 第一轮 （Core Java）
 本来是一个senior engineer来面的，结果因为两个building之间衔接问题。耽误了十分钟。来了一个比较年轻的印度裔工程师。他问了一下大致情况，就开始做题了。leetcode 原题[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)   
