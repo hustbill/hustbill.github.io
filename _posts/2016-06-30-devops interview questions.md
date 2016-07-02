@@ -5,15 +5,18 @@ date:   2016-06-30 19:04:08
 categories: devops
 ---
 
-Dima gave me a shell question on this afternoon, here is the solution.
+Dima gave me a shell question on this afternoon, here is the solution.  
+
 ```code
 $ sudo cat *.txt > /bin/a.out
 bash: /bin/a.out: Permission denied
 
-[Root Cause] :
-This command does not work because the redirection is performed by shell which does not have the permission to write to /bin/a.out. The redirection of the output is not performed by sudo.
+```
+**Root Cause** :
+This command does not work because the redirection is performed by shell which does not have the permission to write to /bin/a.out. The redirection of the output is not performed by sudo.  
 
-[Solution]
+** Solution**
+```code 
 There are two solutions to Dima’ shell question:
 
 1. Run a shell with sudo and give the command to it by using the -c option:
