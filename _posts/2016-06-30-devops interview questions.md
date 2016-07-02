@@ -1,4 +1,11 @@
-Dima gave me a shell question on this afternoon, I gave this issue now.
+---
+layout: post
+title:  "Shell questions for Devops engineer"
+date:   2016-06-30 19:04:08
+categories: devops
+---
+
+Dima gave me a shell question on this afternoon, here is the solution.
 ```code
 $ sudo cat *.txt > /bin/a.out
 bash: /bin/a.out: Permission denied
@@ -26,5 +33,6 @@ $ cat /bin/test2.out
 *.txt a.txt b.txt
 ```
 
-I truly enjoyed learning more about devops role and RealtyShares . After our conversation, I am confident that my skills and experiences are a good match for this opportunity.
+I truly enjoyed learning more about devops role and RealtyShares . After our conversation, I am confident that my skills and experiences are a good match for this opportunity.  
+
 If you need any further information, please do not hesitate to contact me by email or phone. Thanks again, and I hope to hear from you in the near future. 
