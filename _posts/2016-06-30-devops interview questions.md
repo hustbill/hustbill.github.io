@@ -12,10 +12,11 @@ $ sudo cat *.txt > /bin/a.out
 bash: /bin/a.out: Permission denied
 
 ```
-**Root Cause** :
+**Root Cause : **  
 This command does not work because the redirection is performed by shell which does not have the permission to write to /bin/a.out. The redirection of the output is not performed by sudo.  
 
-** Solution**
+** Solution : **  
+
 ```code 
 There are two solutions to Dima’ shell question:
 
