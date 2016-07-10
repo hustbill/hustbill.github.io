@@ -22,3 +22,5 @@ Enjoy typing the words and make the thing better.
 ## 4.图形化
 记住题目的关键test case，以帮助自己记住解题方法和思路。如果能够把解题过程图像化，例如dfs的recursion tree 就很容易帮助自己理解。另外，dynamic programming的递推公式如果能够图形化，也很有帮助。
 
+## 5.多终端学习
+除了用电脑来写题，还可以用手机来看题，复习做题思路。还可以用kindle来看人家的解题思路。用笔和纸来演算过程，或者直接在白板上写题目。保证自己在各种环境都能有效地做题。  
