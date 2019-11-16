@@ -5,36 +5,36 @@ date: 2016-04-16 21:00:00
 categories: jekyll update
 ---
 
-##  公司分析
+#  公司分析
 
-### Groupon
+## Groupon
 地理位置好，有午餐，面试难度不大，offer高适合match ， 是一个非常好的起点
 对在职跳槽，bar有点高， 把自己正在做的东西让你完成
 
-### Expedia
+## Expedia
 在sf里， java house， 难度中等。 Leetcode中等难度
 网上面经重复率 比较高
 
-### Yelp
+## Yelp
 在sf  写python 写到high， 有食堂，难度中等
 面经有重复， 重复概率有点高
 
-### Oracle
+## Oracle
 稳定公司，地理位置优越，付费午餐，名校情结，难度随机， java house， jvm要了解得比较深刻。 绿卡政策好
 
-### Salesforce
+## Salesforce
 成长公司， 类java house， 难度较高，package 和 work－life balance 优秀
 一道题，考察了 所有数据结构 priority queue, stack， 股票比较高
 五轮面试， 两个面试官同时面， 绿卡政策好 sf 市内  ， view比较好 对新生好
 
-### Amazon
+## Amazon
 稳定公司，绿卡政策不好，门槛看岗位，难度随机。  做oa
 幸运的话，给视频面试。 直接给offer
 或去西雅图 参加group interview 。 通过
 套路比较稳定， 面经重复率高。 难度有点高。
 AWS team  或者 performance 组  整体 题目难度 有点广， 都有些涉及 面试强度有点大
 
-### Uber
+## Uber
 最火的startup 难度极高， 无work－life balance 招人多
 四轮都是系统设计，
 如果design uber ， wechat  很清晰的思路，如果能进去 就是一个很好的平台。
@@ -46,7 +46,7 @@ spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问
 不太适合new graduate ， 如果你的engineering能力不强的话， 你可能遇到知识点不足，需要花很多时间的来学习和弥补
 如果你想成为百万富翁，可以试试这家公司
 
-### Google
+## Google
 难度极高，算法造诣要求极高
 完全不看你的简历。  要对算法有一定地造诣。
 刷leetcode lintcode 一定要三四遍 达到融汇贯通的程度。
@@ -99,7 +99,7 @@ public static void main(string args[])
 每年9月份就开始放出全年的headcounter 越早投越好！  
 要总结公司的套路，例如Uber，虽说考察系统设计为主，但也是需要快速把代码快速写出来  
 
-九章算法与系统设计班， 推荐上九章的算法班
+九章算法与系统设计班，推荐上九章的算法班
 
-Linkedn上找人内推，[加好友神器](https://github.com/LearnerChao/LinkDriver)
+<!-- Linkedn上找人内推，[加好友神器](https://github.com/LearnerChao/LinkDriver) -->
 
