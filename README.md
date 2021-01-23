@@ -239,22 +239,17 @@ The iframe will be automatically resized to adapt different form factors also th
 
 #### Comment
 
-This theme support both [Disqus](http://disqus.com) and [Duoshuo](http://duoshuo.com) as the third party discussion system.
+This theme supports [Disqus](http://disqus.com) as the third party discussion system.
 
 First, you need to sign up and get your own account. **Repeat, DO NOT use mine!** (I have set Trusted Domains) It is deathly simple to sign up and you will get the full power of management system. Please give it a try!
 
 Second, from V1.5, you can easily complete your comment configuration by just adding your **short name** into `_config.yml`:
 
 ```
-duoshuo_username: _your_duoshuo_short_name_
-# OR
 disqus_username: _your_disqus_short_name_
 ```
 
 **To the old version user**, it's better that you pull the new version, otherwise you have to replace code in `post.html`, `keynote.html` and `about.html` by yourselves.
-
-Furthermore, Duoshuo support Sharing. if you only wanna use Duoshuo comment without sharing, you can set `duoshuo_share: false`. You can use Duoshuo Sharing and Disqus Comments together also.
-
 
 
 #### Analytics
