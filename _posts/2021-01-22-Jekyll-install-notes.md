@@ -10,7 +10,7 @@ Jekyll notes
 [Jekyll](https://jekyllrb.com/) - Transform your plain text into static websites and blogs.
 Get up and running in seconds.
 Quick-start Instructions
-
+```code  
   gem install bundler jekyll
 
   jekyll new my-awesome-site
@@ -18,7 +18,7 @@ Quick-start Instructions
   cd my-awesome-site
 
   bundle exec jekyll serve
-
+```
 
 Install FAQ
 ------------
@@ -27,6 +27,10 @@ gem install bundler
 
 
 ```code 
+Install zsh
+https://github.com/ohmyzsh/ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ruby -v
