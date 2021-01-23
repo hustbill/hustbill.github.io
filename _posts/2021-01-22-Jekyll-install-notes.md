@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "2021-01-22-Jekyll-install-notes"
+title: "Jekyll-install-notes"
 date: 2021-01-22 17:55:00
-categories: jekyll update
+categories: jekyll tech
 ---
 
-# Jekyll notes
+Jekyll notes
+------------
 [Jekyll](https://jekyllrb.com/) - Transform your plain text into static websites and blogs.
 Get up and running in seconds.
 Quick-start Instructions
@@ -19,7 +20,8 @@ Quick-start Instructions
   bundle exec jekyll serve
 
 
-## Install FAQ
+Install FAQ
+------------
 gem install bundler
 [You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory. (mac user)](https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma)
 
