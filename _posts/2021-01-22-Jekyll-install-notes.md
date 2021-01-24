@@ -3,10 +3,18 @@ layout: post
 title: "Jekyll-install-notes"
 date: 2021-01-22 17:55:00
 categories: jekyll tech
+tags: jekyll install
+mathjax: true
 ---
 
+First level header {#ID1}
+=========================
+
+Third level header    ### {#ID3}
+
+## Second level header ######
 Jekyll notes
-------------
+
 [Jekyll](https://jekyllrb.com/) - Transform your plain text into static websites and blogs.
 Get up and running in seconds.
 Quick-start Instructions
@@ -32,8 +40,10 @@ https://github.com/ohmyzsh/ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"' >> ~/.zshrc
+
 source ~/.zshrc
 ruby -v
 which ruby
+gem install github-pages 
 gem install bundler
 ```
