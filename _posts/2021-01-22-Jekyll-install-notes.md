@@ -7,13 +7,8 @@ tags: jekyll install
 mathjax: true
 ---
 
-First level header {#ID1}
-=========================
-
-Third level header    ### {#ID3}
-
-## Second level header ######
 Jekyll notes
+=========================
 
 [Jekyll](https://jekyllrb.com/) - Transform your plain text into static websites and blogs.
 Get up and running in seconds.
