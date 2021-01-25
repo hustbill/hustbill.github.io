@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site
 _posts/_draft
 _posts/_archive
@@ -11,3 +12,12 @@ node_modules
 .jekyll-cache
 */.DS_Store
 */*/.DS_Store
+=======
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+>>>>>>> dev
