@@ -1,9 +1,9 @@
----  
+---
 layout: post
 title: "Configure Ejabberd chat server to use PostgreSQL"
 date: 2016-04-04 19:58:00
-categories: jekyll update
----  
+categories: chat-server
+---
 
 Configure Ejabberd chat server to use PostgreSQL
 ================================================
