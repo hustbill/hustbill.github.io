@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://hustbill.github.io/tech-blog
-root: /tech-blog/
+url: https://hustbill.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -125,6 +125,6 @@ jsonContent:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/hustbill/tech-blog.git
+  repo: https://github.com/hustbill/hustbill.github.io.git
   branch: source
   message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
