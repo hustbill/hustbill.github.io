@@ -1,7 +1,7 @@
 # Site settings
 title: Hua Blog
 SEOTitle: 张华的博客 | Hua Blog
-header-img: img/home-bg.jpg
+header-img: img/home-bg-walle.jpg
 email: billyzhang2010@gmail.com
 description: "关于后端与服务、写作者 | 张华，Web & Mobile Lover，Back-End Engineer | 这里是 @Hua张华 的个人博客，与你一起发现更大的世界。"
 keyword: "张华, Hua张华, Hua, 张华的博客, Hua Blog, 博客, 个人网站, 互联网"
@@ -105,11 +105,17 @@ friends: [
         title: "前端外刊评论",
         href: "http://qianduan.guru/"
     },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
+        title: "李开复的Medium",
+        href:  "https://kaifulee.medium.com/"
+    },{
+        title: "张鑫旭的空间",
+        href:  "https://www.zhangxinxu.com/"
     },{
         title: "李苦李-谈谈生活，聊聊技术",
         href: "http://www.likuli.com/"
+    },{
+        title: "Maya Shavin - FE",
+        href: "https://medium.com/@mayashavin"
     },{
         title: "当然我在扯淡",
         href: "https://www.yinwang.org/"
