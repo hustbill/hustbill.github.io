@@ -42,7 +42,7 @@ config:
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
@@ -102,14 +102,14 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: hustbill  # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
-  disqus:  # enter disqus shortname here
+  type: disqus  # 启用哪种评论系统
+  disqus:  hustbill # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
   livere:
@@ -141,8 +141,8 @@ comment:
 # Api：
   # https://developers.douban.com/wiki/?title=book_v2 图书
   # https://developers.douban.com/wiki/?title=movie_v2 电影
-# books：  
-  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+books:  
+  https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 #个人书单列表
 # movies: 
   # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
   # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
@@ -183,23 +183,23 @@ fb_app_id:
   
 # profile
 profile:
-  enabled: true # Whether to show profile bar
-  avatar: images/avatar.jpg
+  enabled: true
+  avatar: images/avatar-hua.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  author: 张华
+  author_title: Software Engineer
+  author_description: 「知行合一」
+  location: Seattle, US
+  follow: https://github.com/hustbill
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/hustbill
+      weibo: http://weibo.com/audi2012
+      # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      # behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
@@ -209,15 +209,15 @@ profile:
     Javascript: ★★★☆☆
     HTML+CSS: ★★★☆☆
     Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+    # ThinkPHP: ★★★☆☆
+    # 平面设计: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/hustbill
+    Blog: http://hustbill.github.io
+    微博: http://weibo.com/audi2012
+    # # 花瓣: http://huaban.com/cofess
+    # Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
     - 前端
@@ -228,9 +228,9 @@ profile:
   # My Personal Works
   works:
     name:
-      link: http://www.example.com
-      date: 2016
+      link: http://hustbill.github.io
+      date: 2021
   # My Personal Projects
-  projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+  # projects:
+  #   cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
+  #   cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
