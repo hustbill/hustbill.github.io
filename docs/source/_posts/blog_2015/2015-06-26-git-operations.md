@@ -1,6 +1,6 @@
 ---
 title: Git Operations
-date: 2016-06-26 09:30:00
+date: 2015-06-26 09:30:00
 categories: 
 tags:
     - git
