@@ -1,3 +1,6 @@
+## Hexo Theme - archer
+[hexo-theme-archer](https://github.com/fi3ework/)  
+
 ### Git Operations
 ```
 $ git remote add origin  <REMOTE_URL> 
