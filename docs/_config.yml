@@ -101,7 +101,8 @@ ignore: ['**/themes/**/node_modules/**', '**/themes/**/node_modules', '**/themes
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: archer
+# theme: archer
+theme: next
 
 # Sidebar support
 jsonContent:
