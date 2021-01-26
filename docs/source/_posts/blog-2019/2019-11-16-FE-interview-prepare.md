@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2019-11-16-前端面试与技术准备"
+title: "2019年前端面试与技术准备"
 date: 2019-11-16 11:27:05
 categories: jekyll update
 ---

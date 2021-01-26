@@ -40,4 +40,5 @@ We can opt for the storage:
 
 Reference
 =========
-Getting started with ejabberd
+- [Getting started with ejabberd](https://docs.ejabberd.im/get-started/)
+- [ejabberd repo](https://github.com/processone/ejabberd)
