@@ -1,6 +1,6 @@
 ---
-title: 2020-08-10-shuangpib-typing.md
-date: 2021-01-26 10:12:30
+title: 用双拼输入法写小说
+date: 2020-08-10 10:12:30
 categories: 个人日志
 tags: 写作
 ---
