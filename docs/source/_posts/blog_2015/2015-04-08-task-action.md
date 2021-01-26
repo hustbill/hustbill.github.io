@@ -2,7 +2,7 @@
 layout: post
 title:  "当前的任务和想法"
 date:   2015-04-08 19:04:08
-categories: 个人日记
+categories: 个人日志
 ---
 2015.04.08
 
