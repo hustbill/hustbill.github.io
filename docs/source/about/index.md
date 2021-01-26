@@ -1,9 +1,8 @@
 ---
 title: about
 date: 2021-01-25 12:16:43
-layout: page
+layout: about
 description: "Hey, this is Hua."
-header-img: "img/about-bg.jpg"
 ---
 这是我的自我描述，待完成，谢谢！🙏
 
