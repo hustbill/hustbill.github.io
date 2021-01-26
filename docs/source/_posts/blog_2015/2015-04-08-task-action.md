@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "当前的任务和想法t!"
+title:  "当前的任务和想法"
 date:   2015-04-08 19:04:08
-categories: jekyll update
+categories: 个人日记
 ---
 2015.04.08
 
