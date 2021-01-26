@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Hua
 subtitle: ''
 description: ''
 keywords:
@@ -51,7 +51,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
+# Prism is a lightweight, extensible syntax highlighter
+prismjs: 
   enable: false
   preprocess: true
   line_number: true
