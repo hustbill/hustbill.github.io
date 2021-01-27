@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/categories/markdown/</link>
+    <description>Recent content in Markdown on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This is my first post!</title>
+      <link>http://localhost:1313/post/blog_2015/this-is-my-firstpost/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/blog_2015/this-is-my-firstpost/</guid>
+      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve --watch, which launches a web server and auto-regenerates your site when a file is updated.
+To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.</description>
+    </item>
+    
+  </channel>
+</rss>

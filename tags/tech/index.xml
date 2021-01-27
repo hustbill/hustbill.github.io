@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/tags/tech/</link>
+    <description>Recent content in tech on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Ejabberd chat server to use PostgreSQL</title>
+      <link>http://localhost:1313/post/blog_2016/ejabberd-configure-db-postgresql/</link>
+      <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/blog_2016/ejabberd-configure-db-postgresql/</guid>
+      <description>Configure Ejabberd chat server to use PostgreSQL In order to make data persistent with in any application, we can link it to a PostgreSQL relational database.
+ To change the default to use a postgres database we first need to create a new postgresql database on the server  1 2 3  huazhang@zhoutekiMacBook-Air:~/ejabberd-15.09/bin$ psql psql (9.4.4) huazhang=# run ./createdb ejabberd   Create the tables using the supplied script  1  huazhang-# .</description>
+    </item>
+    
+  </channel>
+</rss>
