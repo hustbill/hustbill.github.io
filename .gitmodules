@@ -1,0 +1,6 @@
+[submodule "hugo-blog/themes/ananke"]
+	path = hugo-blog/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "hugo-blog/themes/even"]
+	path = hugo-blog/themes/even
+	url = https://github.com/olOwOlo/hugo-theme-even.git
