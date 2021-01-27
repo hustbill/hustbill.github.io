@@ -2,7 +2,7 @@
 layout: post
 title: "使用Markdown编辑器写博客"
 date: 2016-05-10 11:50:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 

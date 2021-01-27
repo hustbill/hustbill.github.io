@@ -2,7 +2,7 @@
 layout: post
 title:  "GrandmaStory02"
 date:   2016-03-23 10:29:08
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 #听奶奶讲过去的故事之二

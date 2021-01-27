@@ -2,7 +2,7 @@
 layout: post
 title: "2016-07-10-做题的目标"
 date: 2016-07-10 08:00:00
-categories: leetcode
+categories: [leetcode]
 ---
 
 2016-07-10-做题的目标

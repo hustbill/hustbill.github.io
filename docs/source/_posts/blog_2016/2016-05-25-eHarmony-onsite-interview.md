@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "eHarmony onsite interview"
+title: "eHarmony [onsite interview]"
 date: 2016-05-25 08:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 从san jose airport 飞到 lax  感觉还不错。在机场吃了一顿过饭

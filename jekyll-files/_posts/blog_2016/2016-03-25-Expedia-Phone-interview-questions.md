@@ -2,7 +2,7 @@
 layout: post
 title: "Expedia phone interview questions"
 date: 2016-03-25 20:20:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 1. what’s the difference between abstract class and interface?

@@ -2,7 +2,7 @@
 layout: post
 title: "Scala resource list"
 date: 2016-03-31 22:50:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 Scala resource list

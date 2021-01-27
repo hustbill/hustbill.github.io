@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Pluribus Networks onsite interview"
+title: "Pluribus Networks [onsite interview]"
 date: 2016-05-17 08:00:00
-categories: onsite interview
+categories: [onsite interview]
 ---
 
 Address:  2455 Faber Place, Suite 100, Palo Alto, CA

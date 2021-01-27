@@ -2,7 +2,7 @@
 layout: post
 title: "看《动物凶猛》和《阳光灿烂的日子》有感"
 date: 2021-01-22 17:08:00
-categories: jekyll log
+categories: [个人笔记]
 ---
 
 ### 王朔《动物凶猛》和姜文《阳光灿烂的日子》有感

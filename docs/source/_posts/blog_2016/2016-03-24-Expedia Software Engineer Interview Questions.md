@@ -2,7 +2,7 @@
 layout: post
 title: "Expedia Software Engineer Interview Questions"
 date: 2016-03-24 23:04:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 ##Software Developer Interview Questions  

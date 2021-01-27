@@ -2,7 +2,7 @@
 layout: post
 title: "硅谷公司分析与技术准备"
 date: 2016-04-16 21:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 #  公司分析
@@ -12,7 +12,7 @@ categories: jekyll update
 对在职跳槽，bar有点高， 把自己正在做的东西让你完成
 
 ## Expedia
-在sf里， java house， 难度中等。 Leetcode中等难度
+在sf里， java house， 难度中等。 [leetcode]中等难度
 网上面经重复率 比较高
 
 ## Yelp
@@ -49,7 +49,7 @@ spark 和hadoop  一定要对简历和项目了解非常深，很准确回答问
 ## Google
 难度极高，算法造诣要求极高
 完全不看你的简历。  要对算法有一定地造诣。
-刷leetcode lintcode 一定要三四遍 达到融汇贯通的程度。
+刷[leetcode] lintcode 一定要三四遍 达到融汇贯通的程度。
 在写code过程中 不断地拍照。 对代码clean的程度要求高。平时要多家训练
 从medium 到hard的程度。  对自己熟知的算法和da ta structure 手到擒来
 每年hiring 1000工程师 ，硅谷 一年hire200人

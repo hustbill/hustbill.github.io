@@ -2,7 +2,7 @@
 layout: post
 title:  "Yarn Scheduler Load Simulator (SLS)"
 date:   2015-04-09 21:42:08
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 

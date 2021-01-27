@@ -2,7 +2,7 @@
 layout:	post
 title:	"Hadoop YARN Setting"
 date:	2015-04-11 11:49:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 ## Hadoop YARN ##  
 1. vi .bash_profile  

@@ -2,7 +2,7 @@
 layout: post
 title: "少有人走过的路－读书摘要"
 date: 2016-03-25 21:20:00
-categories: jekyll update
+categories: [个人笔记]
 ---
  自律，是以积极而主动的态度，去解决人生痛苦的重要原则，主要包括四个方面：推迟满足感、承担责任、尊重事实、保持平衡。 
  

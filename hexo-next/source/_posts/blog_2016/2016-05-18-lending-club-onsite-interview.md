@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Lending Club onsite interview"
+title: "Lending Club [onsite interview]"
 date: 2016-05-18 20:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 5/5 phon interview
 
 ## 第一轮 （Core Java）
-本来是一个senior engineer来面的，结果因为两个building之间衔接问题。耽误了十分钟。来了一个比较年轻的印度裔工程师。他问了一下大致情况，就开始做题了。leetcode 原题[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)   
+本来是一个senior engineer来面的，结果因为两个building之间衔接问题。耽误了十分钟。来了一个比较年轻的印度裔工程师。他问了一下大致情况，就开始做题了。[leetcode] 原题[121. Best Time to Buy and Sell Stock](https://[leetcode].com/problems/best-time-to-buy-and-sell-stock/)   
 Say you have an array for which the ith element is the price of a given stock on day i.
 
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
@@ -27,7 +27,7 @@ If you were only permitted to complete at most one transaction (ie, buy one and 
             maxSofar = Math.max(maxCur, maxSofar);
         }
         return maxSofar;
-        // Reference 1 :  https://leetcode.com/discuss/48378/kadanes-algorithm-since-mentioned-about-interviewer-twists
+        // Reference 1 :  https://[leetcode].com/discuss/48378/kadanes-algorithm-since-mentioned-about-interviewer-twists
         // Reference 2: https://en.wikipedia.org/wiki/Maximum_subarray_problem
     }
 ```

@@ -2,8 +2,8 @@
 layout: post
 title: 冬日暖阳，适宜外出散步
 date: 2020-12-12 08:30:00
-categories: 个人日志
-tags: jekyll logs
+categories: [个人笔记]
+tags: [个人笔记]
 ---
 
 ## 12/11/2020

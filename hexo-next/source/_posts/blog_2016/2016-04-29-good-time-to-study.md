@@ -2,7 +2,7 @@
 layout: post
 title: "最高效的学习时间"
 date: 2016-04-29 8:10:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 最高效的学习时间－ 早上7:30-11:00
@@ -19,7 +19,7 @@ categories: jekyll update
 打开电脑以后容易无所事事，在网上瞎逛。  	
 **纠正办法：**   
 - 开机之前，先用笔和本子写好要做的事情，一项一项列出来，需要做哪几点，每项估算多少分钟	
-- 设定好常去的网站，jianshu,伯乐在线，program for greeks,  leetcode, 还有一亩三分地论坛，其他乱七八糟的网站就不去了吧。  
+- 设定好常去的网站，jianshu,伯乐在线，program for greeks,  [leetcode], 还有一亩三分地论坛，其他乱七八糟的网站就不去了吧。  
 - 坚持在Github提交代码和jianshu上写文章，让自己的日常生活充实起来
 
 刷题的方法  

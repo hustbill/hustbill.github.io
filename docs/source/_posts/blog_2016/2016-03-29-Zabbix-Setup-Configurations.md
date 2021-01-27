@@ -2,7 +2,7 @@
 layout: post
 title: "Zabbix Installation and Configurations"
 date: 2016-03-29 14:39:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 Note 

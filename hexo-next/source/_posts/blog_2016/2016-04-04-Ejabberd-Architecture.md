@@ -2,7 +2,7 @@
 layout: post
 title: "Ejabberd-Architecture"
 date: 2016-04-04 11:50:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 Created by Hua Zhang, last modified on Oct 12, 2015  

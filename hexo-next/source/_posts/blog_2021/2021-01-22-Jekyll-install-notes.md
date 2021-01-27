@@ -2,8 +2,8 @@
 layout: post
 title: "Jekyll-install-notes"
 date: 2021-01-22 17:55:00
-categories: jekyll tech
-tags: jekyll install
+categories: [tech]
+tags: [jekyll install]
 mathjax: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "2016-03-31-EPAM-Scala-Interview-Questions"
 date: 2016-04-01 08:00:00
-categories: interview
+categories: [interview]
 ---
 
 ## Scala Interview Questions

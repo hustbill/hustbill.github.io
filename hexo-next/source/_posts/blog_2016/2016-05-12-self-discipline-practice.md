@@ -2,7 +2,7 @@
 layout: post
 title: "自律与操练"
 date: 2016-05-12 08:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---  
 
 缺乏太强的自律意识

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "NimbleRx onsite interview."
+title: "NimbleRx [onsite interview]."
 date: 2016-05-13 20:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 
@@ -70,7 +70,7 @@ class  Tag {
 ```
 
 <html> <body> </body> </html>  
-这道题很类似LeetCode [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+这道题很类似[leetcode] [Valid Parentheses](https://[leetcode].com/problems/valid-parentheses/)
 
 ```java
 isValidXml (List<Tag> list ) {

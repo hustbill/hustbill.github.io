@@ -2,7 +2,7 @@
 layout: post
 title:  "Core Java concept questions"
 date:   2016-04-10 15:48:08
-categories: jekyll update
+categories: [个人笔记]
 ---
 *6. Enhance vs-Traditional For Loop*  
 In which of the following scenarios is it appropriate to use the enhanced for loop as opposed to the traditional for loop?  

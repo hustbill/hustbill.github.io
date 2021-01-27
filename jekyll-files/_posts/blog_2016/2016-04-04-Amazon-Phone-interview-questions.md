@@ -2,7 +2,7 @@
 layout: post
 title: "亚麻电面题"
 date: 2016-04-04 11:50:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 # *Question*

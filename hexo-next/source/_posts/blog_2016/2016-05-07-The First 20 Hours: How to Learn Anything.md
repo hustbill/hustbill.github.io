@@ -2,7 +2,7 @@
 layout: post
 title: "读《关键20小时，快速学会任何技能》"
 date: 2016-05-06 08:00:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 TED大热演讲者、“学霸”－乔希•考夫曼（Josh Kaufman） 在TED上的演讲：How to learn anything，这个TED大热之后，他又出一本同名书籍：The First 20 Hours: How to Learn Anything 。没看过这个TED的，点击查看，最好在Wifi的环境下观看：[http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html](http://v.qq.com/boke/page/r/0/a/r0141z4bd3a.html) 
 

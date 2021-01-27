@@ -2,7 +2,7 @@
 layout: post
 title: "Senior Software Engineer (Tour Automation) at Redfin"
 date: 2016-04-06 22:42:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 

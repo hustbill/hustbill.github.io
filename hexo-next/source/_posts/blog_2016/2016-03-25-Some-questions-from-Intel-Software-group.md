@@ -2,7 +2,7 @@
 layout: post
 title: "Some questions from Intel Software group"
 date: 2016-03-25 10:20:00
-categories: jekyll update
+categories: [个人笔记]
 ---
 
 
