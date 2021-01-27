@@ -1,0 +1,134 @@
+# ========== Profile ========== #
+# avatar
+avatar: /avatar/avatar-hua.jpg
+# author name
+author: 张华
+# signature
+signature: 「知行合一」
+# SNS (you can custom the order)
+social:
+  email: 23035121@qq.com
+  github: //github.com/hustbill
+  # wechat and qq should be a path of qr-code image
+  wechat: /assets/example_qr.png
+  qq: 23035121
+  telegram: 
+  weibo: 
+  zhihu: 
+  douban: 
+  facebook: 
+  twitter: 
+  instagram: 
+  stack-overflow: 
+  segmentFault: 
+  juejin: 
+  v2ex: 
+  bilibili: 
+  linkedin: 
+  steam: 
+  others: 
+  rss: 
+# friends
+friends:
+  酷壳-陈皓:  //coolshell.cn/
+  王垠的博客: //yinwang.org/
+  李苦李: //likuli.com/
+  黄玄的博客: //huxpro.github.io/
+  唐巧的博客: //blog.devtang.com
+  friendC: 
+about:
+  enable: true
+  image: '/intro/about-bg.jpg'
+
+# ========== Site ========== #
+# title of the site (good for SEO)
+SEO_title: Hua Tech blog
+# keywords for site (good for SEO)
+SEO_keywords:
+  - hexo
+  - 'hexo-theme'
+  - 'hexo-blog'
+# main title shown in header image
+main_title: 张华的博客
+# subtitle
+subtitle: 「知行合一」
+# site haeder image
+site_header_image: '/intro/index-bg.jpg'
+# post haeder image
+post_header_image: '/intro/post-bg.jpg'
+# 404 image
+_404_image: '/intro/404-bg.jpg'
+
+# ========== Search ========== #
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We did not find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
+
+# ========== Comment ========== #
+# Fill in the field to enable the corresponding comment plugin
+# If you want to add other comment plugin, edit in "custom.ejs"
+comment:
+  # Livere  site: https://livere.com/
+  livere_uid: 
+  # Disqus  site: https://disqus.com/
+  disqus_shortname: hustbill
+  # Gitment  site: https://github.com/imsun/gitment
+  gitment_owner: 
+  gitment_repo: 
+  gitment_client_id: 
+  gitment_client_secret: 
+  # Youyan  site: http://www.uyan.cc/
+  youyan_uid: 
+  # Valine  site: https://valine.js.org/
+  valine_appId: 
+  valine_appKey: 
+  valine_placeHolder: 
+  # gitalk site: https://github.com/gitalk/gitalk#options  
+  gitalk_client_id: 
+  gitalk_client_secret: 
+  gitalk_admin: 
+  gitalk_owner: 
+  gitalk_repo: 
+  # utteranc site: https://utteranc.es/
+  utteranc_repo:  
+  utteranc_label: 
+  utteranc_theme: 
+  utteranc_issue_term: 
+
+# ========== Analytics ========== #
+# enable Busuanzi analytics
+busuanzi: true
+# fill in pv or uv
+busuanzi_pv_or_uv: 'pv'
+# custom analytic slogan, '${count}' is the analytic number, DO NOT modify it.
+busuanzi_slug: 'PV: ${count} :)'
+# Baidu analytics
+baidu_analytics: 
+# Google analytics
+google_analytics: 
+# CNZZ analytics
+CNZZ_analytics: 
+
+# ========== Others ========== #
+# favicon
+favicon: /assets/favicon.ico
+# truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
+truncate_length: 
+# enable toc
+toc: true
+# word count & reading time
+reading_info: true
+# intro height (the default is 50 percents of the screen, you can input other number)
+index_intro_height: 25
+post_intro_height: 25
+about_intro_height: 25
+# copyright
+copyright:
+  enable: true
+  # https://creativecommons.org/
+  license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
