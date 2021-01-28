@@ -2,7 +2,7 @@
 layout: post
 title: "折腾Hexo和Jekyll"
 date: 2021-01-24 1:45:00
-categories: [tech]
+tags: [博客搭建]
 tags: [jekyll install]
 mathjax: true
 ---
