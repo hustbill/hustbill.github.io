@@ -2,7 +2,8 @@
 title: "JS Flowchart Diagrams"
 date: 2015-03-04T21:57:50+08:00
 draft: false
-
+tags: ["Theme preview"]
+categories: ["Theme preview"]
 flowchartDiagrams:
   enable: true
   options: "{
