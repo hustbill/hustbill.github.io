@@ -2,7 +2,7 @@
 title: "让Vim 支持Javascript 语法高亮显示"
 date: "2017-11-05 03:30:47"
 draft: false
-categories: [开源技术]
+categories: [开源学习]
 hiddenFromHomePage: true
 ---
 ### Installation

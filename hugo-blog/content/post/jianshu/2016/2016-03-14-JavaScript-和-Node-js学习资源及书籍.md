@@ -2,7 +2,7 @@
 title: "JavaScript 和 Node.js学习资源及书籍"
 date: "2016-03-14 13:28:50"
 draft: false
-categories: [开源技术]
+categories: [开源学习]
 hiddenFromHomePage: true
 ---
 学习和使用Node.js已经有近一年多时间了。越学习越觉得自己懂得还不够多。之前走过一些弯路，看了太多的入门水平的文章。现在推荐一些深入的学习资源和书籍  

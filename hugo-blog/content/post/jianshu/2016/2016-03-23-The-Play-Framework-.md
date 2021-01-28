@@ -2,7 +2,7 @@
 title: "The Play Framework "
 date: "2016-03-23 01:56:20"
 draft: false
-categories: [开源技术]
+categories: [开源学习]
 hiddenFromHomePage: true
 ---
 **The Play Framework at LinkedIn**. 

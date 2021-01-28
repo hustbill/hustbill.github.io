@@ -2,7 +2,7 @@
 title: "Windows 7 + VirtualBox 5.1.8 + Ubuntu 15.0.4 调整屏幕大小"
 date: "2016-11-03 06:56:10"
 draft: false
-categories: [开源技术]
+categories: [开源学习]
 hiddenFromHomePage: true
 ---
 调整ubuntu的 分辨率1920 * 1080  
