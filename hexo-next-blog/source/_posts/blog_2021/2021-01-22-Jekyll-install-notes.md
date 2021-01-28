@@ -2,8 +2,7 @@
 layout: post
 title: "Jekyll-install-notes"
 date: 2021-01-22 17:55:00
-tags: [博客搭建]
-tags: [jekyll install]
+tags: ["Jekyll", "博客搭建"]
 mathjax: true
 ---
 
