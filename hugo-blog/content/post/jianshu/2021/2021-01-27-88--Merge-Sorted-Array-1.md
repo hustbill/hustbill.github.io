@@ -2,7 +2,7 @@
 title: "88--Merge-Sorted-Array-1"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
 [**Description](https://leetcode.com/problems/merge-sorted-array/#/description)[**Hints](https://leetcode.com/problems/merge-sorted-array/#/hints)[**Submissions](https://leetcode.com/problems/merge-sorted-array/#/submissions)[**Solutions](https://leetcode.com/problems/merge-sorted-array/#/solutions)

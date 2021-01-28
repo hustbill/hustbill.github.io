@@ -2,7 +2,7 @@
 title: "349--Intersection-of-Two-Arrays-2"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
 Given two arrays, write a function to compute their intersection.

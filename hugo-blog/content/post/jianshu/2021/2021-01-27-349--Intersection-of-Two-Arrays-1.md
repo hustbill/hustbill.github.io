@@ -2,7 +2,7 @@
 title: "349--Intersection-of-Two-Arrays-1"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
  [My Submissions](https://leetcode.com/problems/intersection-of-two-arrays/submissions/)

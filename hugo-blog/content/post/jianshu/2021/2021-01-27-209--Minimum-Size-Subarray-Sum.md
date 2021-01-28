@@ -2,7 +2,7 @@
 title: "209--Minimum-Size-Subarray-Sum"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
 Given an array of **n** positive integers and a positive integer **s**, find the minimal length of a **contiguous** subarray of which the sum ≥ **s**. If there isn't one, return 0 instead.

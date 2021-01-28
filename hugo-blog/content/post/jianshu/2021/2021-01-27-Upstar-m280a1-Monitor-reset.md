@@ -2,7 +2,7 @@
 title: "Upstar-m280a1-Monitor-reset"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
 [Upstar m280a1 Monitor showing sideways logo upon startup and then proceeding to show a black screen](https://www.reddit.com/r/techsupport/comments/3rtupa/upstar_m280a1_monitor_showing_sideways_logo_upon/?utm_content=title&utm_medium=front&utm_source=reddit&utm_name=techsupport)

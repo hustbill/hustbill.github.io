@@ -2,8 +2,8 @@
 title: "Pocket-Gems-OA"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
-hiddenFromHomePage: true
+categories: [面试题]
+hiddenFromHomePage: false
 ---
 ```
 题：
@@ -37,16 +37,12 @@ A-> D ->B->C->E
 log file有很多行 有这些关键字：START, CONNECTED, DISCONNECTED, END （记得不是很清楚了 貌似其中一两个有出入）
 ```
 
-需要做的是 读入文件 求用户链接时间占总时间的百分比
+需要做的是：读入文件 求用户链接时间占总时间的百分比
 
 所谓的总时间就是START – END 连接时间就是CONNECTED – DISCONNECTED
 
 当然logs中有不止一个CONNECTED – DISCONNECTED的pair 并且末尾有可能出现CONNECTED – END
 
-其实也不难
-
-command line码的甚是蛋碎
-
-跟单纯的算法题还是有一定的区别 因为先要parse file
+其实也不难，command line码的甚是不爽，跟单纯的算法题还是有一定的区别 因为先要parse file
 
 不熟悉环境导致第一题用了很久才写出来 第二题没写完

@@ -2,7 +2,7 @@
 title: "ParallelPhoneValidator"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
 ```java

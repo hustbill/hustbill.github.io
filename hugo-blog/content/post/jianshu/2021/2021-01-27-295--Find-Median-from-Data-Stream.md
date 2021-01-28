@@ -2,7 +2,7 @@
 title: "295--Find-Median-from-Data-Stream"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
+categories: [leetcode]
 hiddenFromHomePage: true
 ---
  [My Submissions](https://leetcode.com/problems/find-median-from-data-stream/submissions/)

@@ -2,8 +2,8 @@
 title: "Townsend-park-早锻炼"
 date: "2017-04-26"
 draft: false
-categories: [user-1647554-1611798760]
-hiddenFromHomePage: true
+categories: [日记本]
+hiddenFromHomePage: false
 ---
 清晨，我步行去Townsend park，前面有一对印度裔的情侣，携手步行，然后一起跑步。走到公园里面，早锻炼的人以中老年人居多。在外圈台阶周围，有一个亚裔爸爸带着女儿在公园玩游戏，爸爸在站在台阶旁边把钥匙递给小女儿，让小女孩通过三节矮台阶，然后把钥匙交还给爸爸。简单一个小游戏，小女孩玩得不亦乐乎。
 
