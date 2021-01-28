@@ -4,7 +4,8 @@ date: 2018-03-08T17:40:19+08:00
 lastmod: 2018-03-08T22:01:19+08:00
 draft: false
 author: '<a href="https://halu.lu" target="_blank">Halulu</a>'
-
+tags: ["Theme preview"]
+categories: ["Theme preview"]
 hiddenFromHomePage: true
 ---
 
