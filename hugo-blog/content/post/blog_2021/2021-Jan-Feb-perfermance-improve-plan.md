@@ -34,7 +34,7 @@ categories:
 ## 英语学习
 
 - 听力：
-  - 精听： 做听写和听说训练，aboboo.com 和普特听力论坛
+  - 精听： 做听写和听说训练，Aboboo.com 和普特听力论坛
   - 泛听：USA daliy，CNN，还有Youtube上的英语学习视频，
   - 有声书：人物传记，创业历程
 - 阅读： NY Time，还有技术英文博客
