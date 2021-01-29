@@ -2,3 +2,28 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+// ========== Global ========== //
+// Text color of the body.
+$global-font-color: #34495e !default;
+// $global-font-color: #444 !default;
+
+// // Font size attribute applied to '<html>' and '<body>'.
+$global-font-size: 16px !default;
+
+$jianshu-font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+// // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+$global-lineheight: 1.75em !default;
+
+// // $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family:  $jianshu-font-family;
+
+// // Serif font family of the site.
+// // $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+// // $global-serif-font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', sans-serif !default;
+$global-serif-font-family: $global-font-family;
+
+
+// Global width of '<body>'.
+$global-body-width: 800px !default;
