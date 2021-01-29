@@ -10,11 +10,16 @@ body {
   margin: 0;
   font-family: $global-font-family;
   font-weight: normal;
+  // -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: auto;
   // Ref： https://dx-groups.github.io/guide/docs/css/webkit.html#-webkit-font-smoothing
   // 字体平滑，该属性定义文本的平滑属性，但要注意以下说明：非标准属性，不建议用于网页上，这个属性不能保证所有用户都能看到相同效果...
   // 备注： 我就是花费一个小时才发现这个问题。 用同样的font-family 显示效果不如 yinwang 网页效果。屏蔽下面两个属性，就能看到字体粗细和yinwang使用的 jianshu字体
-  // -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: auto;
+  // Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+  // Firefox implements a similar property, but with different values: -moz-osx-font-smoothing. It only works on Mac OS X/macOS.
+  // grayscale - Render text with grayscale antialiasing, as opposed to the subpixel. 
   line-height: $global-lineheight;
   color: $global-font-color;
   background: $global-background;

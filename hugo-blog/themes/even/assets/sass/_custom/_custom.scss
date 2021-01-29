@@ -6,15 +6,15 @@
 // ========== Global ========== //
 // Text color of the body.
 // $global-font-color: #34495e !default;
-$global-font-color: #444 !default;
+$global-font-color: #333 !default;
 
 // // Font size attribute applied to '<html>' and '<body>'.
-$global-font-size: 18px !default;
+$global-font-size: 16px !default;
 
 $jianshu-font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 
 // // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.8em !default;
+$global-lineheight: 1.618em !default;
 
 // // $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 $global-font-family:  $jianshu-font-family;
