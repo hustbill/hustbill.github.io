@@ -7,13 +7,14 @@ type: about
 weight: 50
 comment: false
 ---
-
-<p align="center">
+<!-- Markdown 支持直接写html 加入img -->
+<!-- <p align="center">
   <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-  
-</p>
+</p> -->
 
-![image](/images/avatar-hua-cartoon.jpg)
+{{% center %}}
+![image](/images/avatar-hua-cartoon.jpg "Local Picture")
+{{% /center %}}
 
 ## 简介
 张华，网名hustbill，80后，程序员。曾作为核心员工搭建负责Visa-API告警监控平台OperA2.0。现为微软Azure软件工程师，负责大数据处理。前端、后端、iOS端都有涉及。
