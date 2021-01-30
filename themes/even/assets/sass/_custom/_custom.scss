@@ -5,7 +5,7 @@
 // ========== Global ========== //
 // Text color of the body.
 // $global-font-color: #34495e !default;
-$global-font-color: #444 !default;
+$global-font-color: #333 !default;
 
 // // Font size attribute applied to '<html>' and '<body>'.
 // $global-font-size: 16px !default;
@@ -16,16 +16,16 @@ $jianshu-font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
 // $global-lineheight: 1.5em !default;
 
 // // $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
-// $global-font-family:  $jianshu-font-family;
+$global-font-family:  $jianshu-font-family;
 
 // // Serif font family of the site.
 // // $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 // // $global-serif-font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', sans-serif !default;
-// $global-serif-font-family: $global-font-family;
+$global-serif-font-family: $global-font-family;
 
 
 // Global width of '<body>'.
 // $global-body-width: 800px !default;
 
 // Font size of post title.
-$post-title-font-size: 24px !default;
+$post-title-font-size: 25px !default;
