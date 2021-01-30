@@ -1,5 +1,5 @@
 ---
-title: "2020-04-08 Kubernetes Dashboard - skip Auth"
+title: "Kubernetes Dashboard - skip Auth"
 date: "2020-04-09 03:27:34"
 draft: false
 categories: [DevOps]
