@@ -1,5 +1,5 @@
 ---
-title: "2016-03-30-清晨接到phone-interview"
+title: "清晨接到phone-interview"
 date: "2016-03-30"
 draft: false
 tags:

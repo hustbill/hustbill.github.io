@@ -1,5 +1,5 @@
 ---
-title: "2017-06-09-Big-Mug-Coffee-Roaster"
+title: "Big-Mug-Coffee-Roaster"
 date: "2017-06-09"
 draft: false
 categories: [日记本]

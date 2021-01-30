@@ -1,5 +1,5 @@
 ---
-title: "2016-03-25-Expedia phone interview questions"
+title: "Expedia phone interview questions"
 date: "2016-03-27 00:21:23"
 draft: false
 categories: [面试题]

@@ -1,5 +1,5 @@
 ---
-title: "2016-03-29-LinkedIn Phone Interview Questions"
+title: "LinkedIn Phone Interview Questions"
 date: "2016-03-30 04:55:18"
 draft: false
 categories: [面试题]

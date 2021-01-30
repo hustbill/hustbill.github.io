@@ -1,5 +1,5 @@
 ---
-title: "2016-04-03-Collective Health HackerRank OA"
+title: "Collective Health HackerRank OA"
 date: "2016-04-04 07:30:45"
 draft: false
 categories: [面试题]

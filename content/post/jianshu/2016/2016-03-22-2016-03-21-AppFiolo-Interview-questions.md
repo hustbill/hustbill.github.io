@@ -1,5 +1,5 @@
 ---
-title: "2016-03-21-AppFiolo Interview questions"
+title: "AppFiolo Interview questions"
 date: "2016-03-22 07:19:17"
 draft: false
 categories: [面试题]

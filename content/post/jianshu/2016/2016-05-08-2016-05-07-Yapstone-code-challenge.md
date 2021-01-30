@@ -1,5 +1,5 @@
 ---
-title: "2016-05-07-Yapstone code challenge"
+title: "Yapstone code challenge"
 date: "2016-05-08 02:41:42"
 draft: false
 categories: [面试题]
