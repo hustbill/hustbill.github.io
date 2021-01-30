@@ -2,7 +2,9 @@
 layout: post
 title: "Expedia phone interview questions"
 date: 2016-03-25 20:20:00
-categories: [个人笔记]
+draft: false
+categories: [面试题]
+hiddenFromHomePage: false
 ---
 
 1. what’s the difference between abstract class and interface?
@@ -10,7 +12,7 @@ categories: [个人笔记]
 3. explain three OOD concepts with example
 4. what’s the difference between unit test and integrated test?
 5. regular express
-6. Give a html file,  replace the 408-909-2786 by 4089092786.  how to implement it transfer?
+6. Give a html file, replace the 408-909-2786 by 4089092786. how to implement it transfer?
 7. tell me about REST api
 8. What is caching?
 9. What is statelessness in RESTful Webservices?

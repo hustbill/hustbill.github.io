@@ -2,7 +2,8 @@
 layout: post
 title: "LinkedIn Phone Interview Questions"
 date: 2016-03-29 13:33:00
-categories: [个人笔记]
+categories: [面试题]
+hiddenFromHomePage: true
 ---
 
 ```java
