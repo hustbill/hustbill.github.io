@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Ejabberd-Architecture"
-date: 2016-04-04 11:50:00
-categories: [个人笔记]
+date: 2015-10-12 11:50:00
+categories: [技术笔记]
 ---
 
 Created by Hua Zhang, last modified on Oct 12, 2015  
