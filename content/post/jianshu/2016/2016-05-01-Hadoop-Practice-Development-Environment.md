@@ -12,5 +12,8 @@ hiddenFromHomePage: true
 username: maria_dev
 password: maria_dev
 
+{{% center %}}
+![Hortonworks_Sandbox_with_HDP_2_4](/images/开源技术/1647554-f4d7136fd7e46331.png)  
 
-![Hortonworks_Sandbox_with_HDP_2_4.png](/static/images/开源技术/1647554-f4d7136fd7e46331.png)
+Hortonworks_Sandbox_with_HDP_2_4
+{{% /center %}}

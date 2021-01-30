@@ -3,13 +3,17 @@ title: "2016-03-21-AppFiolo Interview questions"
 date: "2016-03-22 07:19:17"
 draft: false
 categories: [面试题]
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 ---
 AppFolio, Inc.(NASDAQ:APPF)成立于2006年，总部位于美国加州圣巴巴拉，创始人为加州大学前计算机科学教授克劳斯·绍瑟尔(Klasu Schauser)和琼·沃克尔(Jon Walker)，是一家物业管理软件开发公司。
 
-AppFolio creates complete, easy-to-use, cloud-based software for multiple vertical markets. 
+AppFolio creates complete, easy-to-use, cloud-based software for multiple vertical markets.   
 
-![AppFolio Property Manager](/static/images/面试题/1647554-8c6bef1ed2d2025c.png)
+{{% center %}}  
+![AppFolio Property Manager](/images/面试题/1647554-8c6bef1ed2d2025c.png)  
+AppFolio Property Manager
+{{% /center %}}
+
 ## General questions
 1. How to know AppFilo? Why AppFilo?
 2. introduce your projects and tech stacks
@@ -141,6 +145,5 @@ targets.each do |target|
 end
 ```
 
-＃＃尾声
-让面试官给推荐了一本书，
-Agile Web Development with Rails 4 (Facets of Ruby) 1st Edition
+## 尾声
+让面试官给推荐了一本书 《Agile Web Development with Rails 4 (Facets of Ruby) 1st Edition》

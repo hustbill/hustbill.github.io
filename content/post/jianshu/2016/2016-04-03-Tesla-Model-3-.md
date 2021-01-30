@@ -6,9 +6,12 @@ categories: [随笔]
 hiddenFromHomePage: true
 ---
 
-![Tesla Model-3](/static/images/随笔/1647554-2d1f8c738ba294c4.jpg)
-
 天天写字，天天编程，努力吧！
 
 为了明年拿到Model 3 而努力！
+
+{{% center %}}  
+![Tesla Model-3](/images/随笔/1647554-2d1f8c738ba294c4.jpg)  
+Tesla Model-3
+{{% center %}}  
 
