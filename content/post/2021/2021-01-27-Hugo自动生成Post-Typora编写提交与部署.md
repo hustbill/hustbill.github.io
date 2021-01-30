@@ -52,21 +52,26 @@ categories:
 #.bash_profle
 
 export YEAR=`date +%Y`
+export USER=`id -un`
 export DATETIME=`date +%Y-%m-%d-%H-%M-%S`
-export HUGO_BLOG="/Users/zhahua/git/hustbill.github.io/hugo-blog"
-export CONTENT_PATH="content/post/blog_$YEAR"
+export HUGO_BLOG="/Users/$USER/git/hustbill.github.io/"
+export CONTENT_PATH="content/post/$YEAR"
 export POST_PATH="$HUGO_BLOG/$CONTENT_PATH"
-export postname="$DATETIME-post.md"
+export POST_NAME="$DATETIME-post.md"
 
 alias typora="open -a typora"
 alias cdblog="cd $HUGO_BLOG"
-alias newblog="hugo new $POST_PATH/$postname"
-alias typeblog="typora $POST_PATH/$postname"
+alias newblog="hugo new $POST_PATH/$POST_NAME"
+alias typeblog="typora $POST_PATH/$POST_NAME"
 alias writeblog="cdblog && newblog && typeblog"  #  && 前面的命令执行成功，才会执行后面的命令
 # Deploy to Github Pages
-alias deployblog="cd $HUGO_BLOG && git add . && git commit -m 'add a new post $postname' && git push && ./deploy.sh"
-```
+alias dpblog="cd $HUGO_BLOG && hugo -D && git add . && git commit -m 'add a new post $POST_NAME' && git push && ./deploy.sh"
+alias gitpush="cd $HUGO_BLOG && hugo -D && git add . && git commit -m 'add a new post $POST_NAME' && git push"
 
+```
+## 更新记录
+### 2021-01-30 
+更新了blog中的目录名称，添加了本地图片
 
 
 祝好！
