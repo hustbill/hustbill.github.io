@@ -21,7 +21,7 @@ comment: false
 
 本博客主要的内容包括：读书心得、学习笔记、技术研究和生活感悟。
 
-欢迎关注我的[Github](https://github.com/hustbill) 和我的首部小说[《疫情下的艰难时光》](https://book.qidian.com/info/1023432849)
+欢迎关注我的[Github](https://github.com/hustbill) ，[Youtube频道](https://www.youtube.com/channel/UC2M_fE7vw-_UBr0_MAZRD5g)和我的首部小说[《疫情下的艰难时光》](https://book.qidian.com/info/1023432849)
 
 ## 更多信息
 如果你想了解我的经历，可以看我的：[读书笔记](https://hustbill.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/)，[年终总结](https://tinyurl.com/ybzyjups)
