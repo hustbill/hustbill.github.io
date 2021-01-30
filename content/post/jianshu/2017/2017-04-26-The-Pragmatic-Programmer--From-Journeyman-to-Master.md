@@ -2,7 +2,7 @@
 title: "The-Pragmatic-Programmer--From-Journeyman-to-Master"
 date: "2017-04-26"
 draft: false
-categories: [读书笔记]
+categories: [读书心得]
 hiddenFromHomePage: true
 ---
 What Makes a Pragmatic Programmer?

@@ -2,7 +2,7 @@
 title: "Find-your-forgotten-join-token-for-kubeadm"
 date: "2017-04-26"
 draft: false
-categories: [开源学习]
+categories: [技术笔记]
 hiddenFromHomePage: true
 ---
 ```code

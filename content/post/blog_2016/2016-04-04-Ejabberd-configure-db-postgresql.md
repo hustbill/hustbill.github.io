@@ -2,7 +2,7 @@
 layout: post
 title: "Configure Ejabberd chat server to use PostgreSQL"
 date: 2016-04-04 19:58:00
-categories: [开源学习]
+categories: [技术笔记]
 tags:
   - chat server
   - tech

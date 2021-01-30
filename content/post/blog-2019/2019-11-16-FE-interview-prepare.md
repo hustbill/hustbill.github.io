@@ -20,7 +20,7 @@ categories: [个人笔记]
 
 - [Github个人收集的优秀JavaScript项目](https://github.com/Daiyichen/Front-end-tutorial/blob/master/project.md)  
 
-- [javascript 设计模式 读书笔记](https://github.com/maxlxq/interview)  
+- [javascript 设计模式 读书心得](https://github.com/maxlxq/interview)  
 
 - [wjp_jinping Web学习前端资料和项目, 微信小程序, Web全栈工程师资料,视频学习资料百度网盘下载地址](https://github.com/wjp2018/vuecss) 
 

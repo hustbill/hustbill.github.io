@@ -2,9 +2,8 @@
 layout: post
 title: "NimbleRx [onsite interview]."
 date: 2016-05-13 20:00:00
-categories: [个人笔记]
+categories: [面试题]
 ---
-
 
 ## 第一个面试工程师
 Dana (Software Engineer) 8:30 - 9:45
@@ -23,9 +22,7 @@ Amy (Software Engineer) 9:45 - 1100  (7年工作经验） qa出身，IBM干�
 
 主要问了很多测试的问题，各种测试的项目
 
-1.test scenario : pharmacy, doctor, patient, driver , 的流程， 如何测试， 怎样保证正确性  
-
-     take picture 来验证是否收到货
+1. test scenario : pharmacy, doctor, patient, driver , 的流程， 如何测试， 怎样保证正确性，take picture 来验证是否收到货
 
 2. test an user registration page:  username and password,  username is an email address, password have a list of limitation  
     - least 6 characters  
@@ -56,7 +53,7 @@ Amy (Software Engineer) 9:45 - 1100  (7年工作经验） qa出身，IBM干�
 lulei 是华人工程师，给我讲了公司的一些情况，一起吃饭，了解了一些相互的情况。 他给我介绍了公司的一些项目和开发的情况: 既做Node.js＋ Express + MongoDB, 又做 Java ＋ spring ＋ Hibernate ＋ mysql， 服务器部署到 AWS 的开发（s3 + Elastic Beanstalk) 
 
 ## 第三个面试工程师
-Alan (Software Engineer)1:00 - 2:00
+Alan (Software Engineer) 1:00 - 2:00
 
 出了两道题
 1. isValidXml (List<Tag> list)  
@@ -181,13 +178,10 @@ public class ConnectedTree {
 		
 		int leftRightNext = root.left.right.next != null ? root.left.right.next.val : -1;
 		System.out.println("next of " + root.right.right.val + " is " + leftRightNext);  //7
-		
-
 	}
 
 }
 ```
-
 
 ## 第四个面试官
 Duy (Head of Engineering) 14:00 - 14:40
@@ -208,10 +202,10 @@ Pojo  { 
    }
 ```
 分两步做
-1) How to deal with List, Set, Map, refer to Check if Object is instance of String, HashMap, or HashMap[ ]
+1. How to deal with List, Set, Map, refer to Check if Object is instance of String, HashMap, or HashMap[ ]
 obj.instanceOf();
 
-2). How to deal with PoJO, refer to how to get fields from a pojo dynamically
+2. How to deal with PoJO, refer to how to get fields from a pojo dynamically
 You may use java reflection. For simplicity I assume your Employee calss only contains int field. But you can use the similar rules used here for getting float, double or long value.
 
 ```java

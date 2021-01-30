@@ -4,7 +4,7 @@ date: 2018-07-10T00:00:00+08:00
 lastmod: 2018-07-10T00:00:00+08:00
 draft: false
 tags: ["Theme preview"]
-categories: ["Theme preview"]
+tags: ["Theme preview"]
 weight: 10
 contentCopyright: MIT
 mathjax: true

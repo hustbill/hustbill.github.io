@@ -1,5 +1,5 @@
 ---
-title: "10. Regular Expression Matching  "
+title: "10. Regular Expression Matching"
 date: "2016-07-10 01:12:44"
 draft: false
 categories: [LeetCode]

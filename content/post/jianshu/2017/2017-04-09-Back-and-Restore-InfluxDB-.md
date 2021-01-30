@@ -2,7 +2,7 @@
 title: "Back and Restore InfluxDB "
 date: "2017-04-09 01:32:50"
 draft: false
-categories: [开源学习]
+categories: [技术笔记]
 hiddenFromHomePage: true
 ---
 when I backup Influxdb on my Ubuntu 16.04 LTS on Lab,  it uses v0.10.0,  

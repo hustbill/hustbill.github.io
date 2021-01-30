@@ -2,7 +2,7 @@
 title: "VirtualBox + Ubuntu 15.04"
 date: "2016-10-23 01:53:32"
 draft: false
-categories: [开源学习]
+categories: [技术笔记]
 hiddenFromHomePage: true
 ---
 Setup the develop environment for Ubuntu 15.04 on my Mac 

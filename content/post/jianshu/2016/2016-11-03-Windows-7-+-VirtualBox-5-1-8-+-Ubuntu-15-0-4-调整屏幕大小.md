@@ -2,7 +2,7 @@
 title: "Win7 VirtualBox5.1 Ubuntu15.0.4 调整屏幕大小"
 date: "2016-11-03 06:56:10"
 draft: false
-categories: [开源学习]
+categories: [技术笔记]
 hiddenFromHomePage: true
 ---
 调整ubuntu的 分辨率1920 * 1080  
@@ -25,4 +25,4 @@ To view the extension packs that are currently installed, please start the Virtu
 一段构造过程完毕后，重启VirtualBox
 
 
-![ubuntu-virtualBox-setting.png](/images/开源技术/1647554-dc0da2e44703b635.png)
+![ubuntu-virtualBox-setting.png](/images/技术笔记/1647554-dc0da2e44703b635.png)

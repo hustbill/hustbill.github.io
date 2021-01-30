@@ -2,7 +2,7 @@
 title: "okhttp3 用certificate 和token来访问kubernnetes APIServer"
 date: "2017-03-23 14:42:22"
 draft: false
-categories: [开源学习]
+categories: [技术笔记]
 hiddenFromHomePage: true
 ---
 okhttp3 用certificate 和token来访问kubernnetes APIServer
