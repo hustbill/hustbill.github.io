@@ -37,6 +37,6 @@ $ cat /bin/test2.out
 *.txt a.txt b.txt
 ```
 
-I truly enjoyed learning more about [DevOps] role and RealtyShares . After our conversation, I am confident that my skills and experiences are a good match for this opportunity.  
+I truly enjoyed learning more about DevOps role and RealtyShares . After our conversation, I am confident that my skills and experiences are a good match for this opportunity.  
 
 If you need any further information, please do not hesitate to contact me by email or phone. Thanks again, and I hope to hear from you in the near future. 
