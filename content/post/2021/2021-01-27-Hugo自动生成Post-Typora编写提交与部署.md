@@ -70,8 +70,7 @@ alias gitpush="cd $HUGO_BLOG && hugo -D && git add . && git commit -m 'add a new
 
 ```
 ## 更新记录
-### 2021-01-30 
-更新了blog中的目录名称，添加了本地图片
+- 2021-01-30 更新了blog中的目录名称，添加了本地图片
 
 
 祝好！

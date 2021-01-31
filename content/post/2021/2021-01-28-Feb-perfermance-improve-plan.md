@@ -8,12 +8,12 @@ tags: [系统设计, 算法]
 categories: 
     - "个人笔记"
 ---
-
-
+2021年二月份打算从编程技能、系统设计、英语听说读写、健身锻炼四个方面来提升自己。
+<!-- more -->
 
 ## 编程技能
 
-- 夯实算法基础：把常见的算法用Java，JavaScript和Python都实现一遍，培元固本
+- 夯实算法基础：把常见的算法用Java，JavaScript和Python都实现一遍，培元固本 
 - 字符串操作： cut，concat，slice
 - 文件操作： JSON/xml/text/log 文件读写，上传下载
 - NodeJS：异步，Stream

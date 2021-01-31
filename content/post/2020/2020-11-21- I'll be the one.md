@@ -2,8 +2,8 @@
 layout: post
 title: 英雄莫问出处
 date: 2020-11-21 15:36:00
-categories: [个人笔记]
-tags: [个人笔记]
+categories: [随笔]
+tags: [励志]
 ---
 
 ## 冲段少年
