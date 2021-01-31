@@ -2,6 +2,7 @@
 title: "Create Tables"
 date: "2016-05-11 06:06:22"
 draft: false
+tags: ["SQL"]
 categories: [面试题]
 hiddenFromHomePage: true
 ---

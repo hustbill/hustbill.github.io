@@ -2,6 +2,7 @@
 title: "Insert data"
 date: "2016-05-11 06:06:52"
 draft: false
+tags: ["SQL"]
 categories: [面试题]
 hiddenFromHomePage: true
 ---
