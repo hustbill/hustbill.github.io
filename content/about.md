@@ -24,7 +24,7 @@ comment: false
 欢迎关注我的[Github](https://github.com/hustbill) ，[Youtube频道](https://www.youtube.com/channel/UC2M_fE7vw-_UBr0_MAZRD5g)和我的首部小说[《疫情下的艰难时光》](https://book.qidian.com/info/1023432849)
 
 ## 更多信息
-如果你想了解我的经历，可以看我的：[读书笔记](https://hustbill.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/)，[年终总结](https://tinyurl.com/ybzyjups)
+如果你想了解我的经历，可以看我的：[读书心得](https://hustbill.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/)，[年终总结](https://tinyurl.com/ybzyjups)
 
 
 - [2020年终总结](https://hustbill.github.io/post/blog_2021/2021-01-24-2020-annual-summary/)
