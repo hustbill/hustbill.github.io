@@ -36,6 +36,7 @@ lods = [
 
 def getScaleByLod(lod):
 	  # for lod in lods  
+    #   if lods['level'] == lod:
 	  # TypeError: list indices must be integers or slices, not str 
     for  i in range(len(lods)):
         if lods[i]["level"] == lod:
