@@ -45,3 +45,15 @@ which ruby
 gem install github-pages 
 gem install bundler
 ```
+
+- webrick
+
+  ```
+  /usr/local/lib/ruby/gems/3.0.0/gems/jekyll-4.2.0/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+  
+  ## solution:
+  bundle add webrick
+  
+  ```
+
+  
