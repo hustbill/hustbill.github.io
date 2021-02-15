@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Hustbill Blog</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Hustbill Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Feb 2021 00:30:12 -0800</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 02 09 Python List Indices Must Be Integer</title>
+      <link>http://localhost:1313/post/2021/2021-02-09-python-list-indices-must-be-integer/</link>
+      <pubDate>Tue, 09 Feb 2021 00:30:12 -0800</pubDate>
+      
+      <guid>http://localhost:1313/post/2021/2021-02-09-python-list-indices-must-be-integer/</guid>
+      <description>We can solve the error “typeerror: list indices must be integers or slices, not str” by making sure that we access items in a list using index numbers, not strings. The problem in our code is that we’re trying to access “level” in our list of lods:</description>
+    </item>
+    
+    <item>
+      <title>Python3爬取小说章节</title>
+      <link>http://localhost:1313/post/2020/2020-09-24-python-%E7%88%AC%E5%8F%96%E5%B0%8F%E8%AF%B4/</link>
+      <pubDate>Thu, 24 Sep 2020 18:17:13 -0800</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/2020-09-24-python-%E7%88%AC%E5%8F%96%E5%B0%8F%E8%AF%B4/</guid>
+      <description>网络小说《侯大利刑侦笔记》比较吸引人，在手机上的微信读书App看得不过瘾。于是找到了一个小说论坛，可以顺畅地看小说了，但是一页一页地点击论坛</description>
+    </item>
+    
+  </channel>
+</rss>
