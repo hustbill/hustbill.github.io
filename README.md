@@ -16,8 +16,8 @@ git init
 git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 
 # copy the config.toml in the root folder of your Hugo site
-cp theme/even/exampleSite/config.toml ./config.toml
-cp -r theme/even/exampleSite/content/*  ./content/
+cp themes/even/exampleSite/config.toml ./config.toml
+cp -r themes/even/exampleSite/content/*  ./content/
 hugo -D
 hugo server
 # access the localhost:1313 for your own blog locally.
