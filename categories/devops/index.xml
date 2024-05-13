@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DevOps on 张华的博客</title><link>http://localhost:1313/categories/devops/</link><description>Recent content in DevOps on 张华的博客</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Apr 2020 03:27:34 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Dashboard - skip Auth</title><link>http://localhost:1313/post/2020/2020-04-09-kubernetes-dashboard-skip-auth/</link><pubDate>Thu, 09 Apr 2020 03:27:34 +0000</pubDate><guid>http://localhost:1313/post/2020/2020-04-09-kubernetes-dashboard-skip-auth/</guid><description>Ref this doc: Bypassing authentication for the local Kubernetes Cluster Dashboard
+open the downloaded file in your favorite text editor, I’ll use VS Code.
+1 code .\kubernetes-dashboard.yaml Locate the container -&amp;gt; args section under the Dashboard-Deployment section (around line 116) and add the following command line arguments:
+1 2 --enable-skip-login --disable-settings-authorizer Your modified args section should look like the following
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 spec: containers: - name: kubernetes-dashboard image: k8s.</description></item><item><title>influxdb-grafana</title><link>http://localhost:1313/post/2020/2020-03-03-influxdb-grafana/</link><pubDate>Tue, 03 Mar 2020 07:15:23 +0000</pubDate><guid>http://localhost:1313/post/2020/2020-03-03-influxdb-grafana/</guid><description>在MacBook上启动了InfluxDB 和 Grafana，做监控指标的存储和监控主面板。Grafana的监控模版可以去Grafana官网上去</description></item><item><title>Kubernetes-web-UIs</title><link>http://localhost:1313/post/2017/2017-04-08-kubernetes-web-uis/</link><pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate><guid>http://localhost:1313/post/2017/2017-04-08-kubernetes-web-uis/</guid><description>Alternative UIs Tip
+Also check out the blog post about Kubernetes web UIs in 2019 for a look at some different web UIs and why Kubernetes Web View was created.
+This page lists a number of alternative, open source UIs for Kubernetes.
+K8Dash https://github.com/herbrandson/k8dash, web, node.js
+“K8Dash is the easiest way to manage your Kubernetes cluster.”
+Konstellate https://github.com/containership/konstellate, web, Clojure
+“Visualize Kubernetes Applications”
+Kubernetator https://github.com/smpio/kubernator, web, node.js
+“Kubernator is an alternative Kubernetes UI.</description></item><item><title>Shell questions for [DevOps] engineer</title><link>http://localhost:1313/post/2016/2016-06-30-devops-interview-questions/</link><pubDate>Thu, 30 Jun 2016 19:04:08 +0000</pubDate><guid>http://localhost:1313/post/2016/2016-06-30-devops-interview-questions/</guid><description>Dima gave me a shell question on this afternoon, here is the solution.
+1 2 $ sudo cat *.txt &amp;gt; /bin/a.out bash: /bin/a.out: Permission denied ** Root Cause **
+This command does not work because the redirection is performed by shell which does not have the permission to write to /bin/a.out. The redirection of the output is not performed by sudo.
+** Solution **
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 There are two solutions to Dima’ shell question: 1.</description></item></channel></rss>

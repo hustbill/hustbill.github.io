@@ -1,0 +1,243 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Python调试工具`PySnooper`介绍 - 张华的博客</title>
+<meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=Cache-Control content="no-transform"><meta http-equiv=Cache-Control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Hustbill billyzhang2010@gmail.com"><meta name=description content="对于程序开发工程师来说，调试几乎是必备技能。今天再给你介绍一款非常好用的调试工具，它能在一些场景下，大幅度提高调试的效率， 那就是 PySnoo"><meta name=keywords content="读书,写作,技术,生活"><meta name=generator content="Hugo 0.124.1 with theme even"><link rel=canonical href=http://localhost:1313/post/2021/2021-02/2021-02-21-python%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7pysnooper%E4%BB%8B%E7%BB%8D/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="Python调试工具`PySnooper`介绍"><meta property="og:description" content="对于程序开发工程师来说，调试几乎是必备技能。今天再给你介绍一款非常好用的调试工具，它能在一些场景下，大幅度提高调试的效率， 那就是 PySnoo"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/post/2021/2021-02/2021-02-21-python%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7pysnooper%E4%BB%8B%E7%BB%8D/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-02-21T22:47:52-08:00"><meta property="article:modified_time" content="2021-02-21T22:47:52-08:00"><meta itemprop=name content="Python调试工具`PySnooper`介绍"><meta itemprop=description content="对于程序开发工程师来说，调试几乎是必备技能。今天再给你介绍一款非常好用的调试工具，它能在一些场景下，大幅度提高调试的效率， 那就是 PySnoo"><meta itemprop=datePublished content="2021-02-21T22:47:52-08:00"><meta itemprop=dateModified content="2021-02-21T22:47:52-08:00"><meta itemprop=wordCount content="2061"><meta itemprop=keywords content="Python,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Python调试工具`PySnooper`介绍"><meta name=twitter:description content="对于程序开发工程师来说，调试几乎是必备技能。今天再给你介绍一款非常好用的调试工具，它能在一些场景下，大幅度提高调试的效率， 那就是 PySnoo"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>张华的博客</a></div><div class=mobile-navbar-icon><span></span>
+<span></span>
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about/><li class=mobile-menu-item>About</li></a><a href=/links/><li class=mobile-menu-item>Links</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>张华的博客</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about/>About</a></li><li class=menu-item><a class=menu-item-link href=/links/>Links</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>Python调试工具`PySnooper`介绍</h1><div class=post-meta><span class=post-time>2021-02-21</span><div class=post-category><a href=/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/>个人笔记</a></div><span class=more-meta>约 2061 字 </span><span class=more-meta>预计阅读 5 分钟</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><ul><li><a href=#1-安装>1. 安装</a></li><li><a href=#2-简单案例>2. 简单案例</a></li><li><a href=#3-详细使用>3. 详细使用</a><ul><li><a href=#21-重定向到日志文件>2.1 重定向到日志文件</a></li><li><a href=#22-跟踪非局部变量值>2.2 跟踪非局部变量值</a></li><li><a href=#23-设置跟踪函数的深度>2.3 设置跟踪函数的深度</a></li><li><a href=#24-设置调试日志的前缀>2.4 设置调试日志的前缀</a></li><li><a href=#25-设置最大的输出长度>2.5 设置最大的输出长度</a></li><li><a href=#26-支持多线程调试模式>2.6 支持多线程调试模式</a></li><li><a href=#27-自定义对象的格式输出>2.7 自定义对象的格式输出</a></li><li><a href=#pysnooper作者的github-repo和博客>PySnooper作者的Github Repo和博客</a></li></ul></li></ul></li></ul></nav></div></div><div class=post-content><p>对于程序开发工程师来说，调试几乎是必备技能。今天再给你介绍一款非常好用的调试工具，它能在一些场景下，大幅度提高调试的效率， 那就是 <code>PySnooper</code>，它在 Github 上已经收到了 14.2k 的 star，获得大家的一致好评。</p><h2 id=1-安装>1. 安装</h2><p>安装 PySnooper</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>$ python3 -m pip install pysnooper
+</span></span><span class=line><span class=cl>or
+</span></span><span class=line><span class=cl>$ conda install -c conda-forge pysnooper
+</span></span></code></pre></td></tr></table></div></div><h2 id=2-简单案例>2. 简单案例</h2><p>下面这段代码，定义了一个 demo_func 的函数，在里面生成一个 profile 的字典变量，然后去更新它，最后返回。</p><p>代码本身没有什么实际意义，但是用来演示 PySnooper 已经足够。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>import pysnooper
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@pysnooper.snoop()
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    profile = {}
+</span></span><span class=line><span class=cl>    profile[&#34;name&#34;] = &#34;hustbill&#34;
+</span></span><span class=line><span class=cl>    profile[&#34;age&#34;] = 27
+</span></span><span class=line><span class=cl>    profile[&#34;gender&#34;] = &#34;male&#34;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    return profile
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def main():
+</span></span><span class=line><span class=cl>    profile = demo_func()
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>main()
+</span></span></code></pre></td></tr></table></div></div><p>现在我使用终端命令行的方式来运行它</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=p>[</span><span class=n>root</span><span class=err>@</span><span class=n>iswbm</span> <span class=o>~</span><span class=p>]</span><span class=c1># python3 demo.py </span>
+</span></span><span class=line><span class=cl><span class=n>Source</span> <span class=n>path</span><span class=p>:</span><span class=o>...</span> <span class=n>demo</span><span class=o>.</span><span class=n>py</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.624943</span> <span class=n>call</span>         <span class=mi>4</span> <span class=k>def</span> <span class=nf>demo_func</span><span class=p>():</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625124</span> <span class=n>line</span>         <span class=mi>5</span>     <span class=n>profile</span> <span class=o>=</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=n>New</span> <span class=k>var</span><span class=p>:</span><span class=o>.......</span> <span class=n>profile</span> <span class=o>=</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625156</span> <span class=n>line</span>         <span class=mi>6</span>     <span class=n>profile</span><span class=p>[</span><span class=s2>&#34;name&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=s2>&#34;hustbill&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>Modified</span> <span class=k>var</span><span class=p>:</span><span class=o>..</span> <span class=n>profile</span> <span class=o>=</span> <span class=p>{</span><span class=s1>&#39;name&#39;</span><span class=p>:</span> <span class=s1>&#39;hustbill&#39;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625207</span> <span class=n>line</span>         <span class=mi>7</span>     <span class=n>profile</span><span class=p>[</span><span class=s2>&#34;age&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=mi>27</span>
+</span></span><span class=line><span class=cl><span class=n>Modified</span> <span class=k>var</span><span class=p>:</span><span class=o>..</span> <span class=n>profile</span> <span class=o>=</span> <span class=p>{</span><span class=s1>&#39;name&#39;</span><span class=p>:</span> <span class=s1>&#39;hustbill&#39;</span><span class=p>,</span> <span class=s1>&#39;age&#39;</span><span class=p>:</span> <span class=mi>27</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625254</span> <span class=n>line</span>         <span class=mi>8</span>     <span class=n>profile</span><span class=p>[</span><span class=s2>&#34;gender&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=s2>&#34;male&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>Modified</span> <span class=k>var</span><span class=p>:</span><span class=o>..</span> <span class=n>profile</span> <span class=o>=</span> <span class=p>{</span><span class=s1>&#39;name&#39;</span><span class=p>:</span> <span class=s1>&#39;hustbill&#39;</span><span class=p>,</span> <span class=s1>&#39;age&#39;</span><span class=p>:</span> <span class=mi>27</span><span class=p>,</span> <span class=s1>&#39;gender&#39;</span><span class=p>:</span> <span class=s1>&#39;male&#39;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625306</span> <span class=n>line</span>        <span class=mi>10</span>     <span class=k>return</span> <span class=n>profile</span>
+</span></span><span class=line><span class=cl><span class=mi>17</span><span class=p>:</span><span class=mi>52</span><span class=p>:</span><span class=mf>49.625344</span> <span class=k>return</span>      <span class=mi>10</span>     <span class=k>return</span> <span class=n>profile</span>
+</span></span><span class=line><span class=cl><span class=n>Return</span> <span class=n>value</span><span class=p>:</span><span class=o>..</span> <span class=p>{</span><span class=s1>&#39;name&#39;</span><span class=p>:</span> <span class=s1>&#39;hustbill&#39;</span><span class=p>,</span> <span class=s1>&#39;age&#39;</span><span class=p>:</span> <span class=mi>27</span><span class=p>,</span> <span class=s1>&#39;gender&#39;</span><span class=p>:</span> <span class=s1>&#39;male&#39;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>Elapsed</span> <span class=n>time</span><span class=p>:</span> <span class=mi>00</span><span class=p>:</span><span class=mi>00</span><span class=p>:</span><span class=mf>00.000486</span>
+</span></span></code></pre></td></tr></table></div></div><p>可以看到 PySnooper 把函数运行的过程全部记录了下来，包括：</p><ul><li>代码的片段、行号等信息，以及每一行代码是何时调用的？</li><li>函数内局部变量的值如何变化的？何时新增了变量，何时修改了变量。</li><li>函数的返回值是什么？</li><li>运行函数消耗了多少时间？</li></ul><p>而作为开发者，要得到这些如此详细的调试信息，你需要做的非常简单，只要给你想要调试的函数上带上一顶帽子（装饰器） &ndash; <code>@pysnooper.snoop()</code> 即可。</p><h2 id=3-详细使用>3. 详细使用</h2><h3 id=21-重定向到日志文件>2.1 重定向到日志文件</h3><p><code>@pysnooper.snoop()</code> 不加任何参数时，会默认将调试的信息输出到标准输出。</p><p>对于单次调试就能解决的 BUG ，这样没有什么问题，但是有一些 BUG 只有在特定的场景下才会出现，需要你把程序放在后面跑个一段时间才能复现。</p><p>这种情况下，你可以将调试信息重定向输出到某一日志文件中，方便追溯排查。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=err>@</span><span class=n>pysnooper</span><span class=o>.</span><span class=n>snoop</span><span class=p>(</span><span class=n>output</span><span class=o>=</span><span class=s1>&#39;/var/log/debug.log&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>demo_func</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=22-跟踪非局部变量值>2.2 跟踪非局部变量值</h3><p>PySnooper 是以函数为单位进行调试的，它默认只会跟踪函数体内的局部变量，若想跟踪全局变量，可以给 <code>pysnooper.snoop()</code> 加上 <code>watch</code> 参数</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>out = {&#34;foo&#34;: &#34;bar&#34;}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@pysnooper.snoop(watch=(&#39;out[&#34;foo&#34;]&#39;))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>如此一来，PySnooper 会在 <code>out["foo"]</code> 值有变化时，也将其打印出来</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/QB6G4ZoE187IrEeDu7Gf43ianib75mjibe9K88q9sumDD2jib6jpcrbibFdJyr1neOkhiaY55vlFfwNuVGbD75RhA6Kg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=Image></p><p>watch 参数，接收一个可迭代对象（可以是list 或者 tuple），里面的元素为字符串表达式，什么意思呢？看下面例子就知道了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@pysnooper.snoop(watch=(&#39;out[&#34;foo&#34;]&#39;, &#39;foo.bar&#39;, &#39;self.foo[&#34;bar&#34;]&#39;))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>和 <code>watch</code> 相对的，<code>pysnooper.snoop()</code> 还可以接收一个函数 <code>watch_explode</code>，表示除了这几个参数外的其他所有全局变量都监控。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@pysnooper.snoop(watch_explode=(&#39;foo&#39;, &#39;bar&#39;))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><h3 id=23-设置跟踪函数的深度>2.3 设置跟踪函数的深度</h3><p>当你使用 PySnooper 调试某个函数时，若该函数中还调用了其他函数，PySnooper 是不会傻傻的跟踪进去的。</p><p>如果你想继续跟踪该函数中调用的其他函数，可以通过指定 <code>depth</code> 参数来设置跟踪深度（不指定的话默认为 1）。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@pysnooper.snoop(depth=2)
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl> ...
+</span></span></code></pre></td></tr></table></div></div><h3 id=24-设置调试日志的前缀>2.4 设置调试日志的前缀</h3><p>当你在使用 PySnooper 跟踪多个函数时，调试的日志会显得杂乱无章，不方便查看。</p><p>在这种情况下，PySnooper 提供了一个参数，方便你为不同的函数设置不同的标志，方便你在查看日志时进行区分。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=err>@</span><span class=n>pysnooper</span><span class=o>.</span><span class=n>snoop</span><span class=p>(</span><span class=n>output</span><span class=o>=</span><span class=s2>&#34;/var/log/debug.log&#34;</span><span class=p>,</span> <span class=n>prefix</span><span class=o>=</span><span class=s2>&#34;demo_func: &#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>demo_func</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span></code></pre></td></tr></table></div></div><p>效果如下</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/QB6G4ZoE187IrEeDu7Gf43ianib75mjibe9bNGowKTsz3ibVboQmnYHfDqGSUT7EkkF5Dfea6kguU21el8icsSiaS7ibA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=Image></p><h3 id=25-设置最大的输出长度>2.5 设置最大的输出长度</h3><p>默认情况下，PySnooper 输出的变量和异常信息，如果超过 100 个字符，被会截断为 100 个字符。</p><p>当然你也可以通过指定参数 进行修改</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=err>@</span><span class=n>pysnooper</span><span class=o>.</span><span class=n>snoop</span><span class=p>(</span><span class=n>max_variable_length</span><span class=o>=</span><span class=mi>200</span><span class=err>）</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>demo_func</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span></code></pre></td></tr></table></div></div><p>您也可以使用max_variable_length=None它从不截断它们。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=err>@</span><span class=n>pysnooper</span><span class=o>.</span><span class=n>snoop</span><span class=p>(</span><span class=n>max_variable_length</span><span class=o>=</span><span class=n>None</span><span class=err>）</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>demo_func</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=26-支持多线程调试模式>2.6 支持多线程调试模式</h3><p>PySnooper 同样支持多线程的调试，通过设置参数 <code>thread_info=True</code>，它就会在日志中打印出是在哪个线程对变量进行的修改。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@pysnooper.snoop(thread_info=True)
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>效果如下</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/QB6G4ZoE187IrEeDu7Gf43ianib75mjibe96PMfvB9bicibzbVodQxLoZmibPlg8zvwpZtiaZwuAXeK50pvNS02eufPnA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=Image></p><h3 id=27-自定义对象的格式输出>2.7 自定义对象的格式输出</h3><p><code>pysnooper.snoop()</code> 函数有一个参数是 <code>custom_repr</code>，它接收一个元组对象。</p><p>在这个元组里，你可以指定特定类型的对象以特定格式进行输出。</p><p>这边我举个例子。</p><p>假如我要跟踪 person 这个 Person 类型的对象，由于它不是常规的 Python 基础类型，PySnooper 是无法正常输出它的信息的。</p><p>因此我在 <code>pysnooper.snoop()</code> 函数中设置了 <code>custom_repr</code> 参数，该参数的第一个元素为 Person，第二个元素为 <code>print_persion_obj</code> 函数。</p><p>PySnooper 在打印对象的调试信息时，会逐个判断它是否是 Person 类型的对象，若是，就将该对象传入 <code>print_persion_obj</code> 函数中，由该函数来决定如何显示这个对象的信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class Person:pass
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def print_person_obj(obj):
+</span></span><span class=line><span class=cl>    return f&#34;&lt;Person {obj.name} {obj.age} {obj.gender}&gt;&#34;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@pysnooper.snoop(custom_repr=(Person, print_person_obj))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>完整的代码如下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>import pysnooper
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>class Person:pass
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def print_person_obj(obj):
+</span></span><span class=line><span class=cl>    return f&#34;&lt;Person {obj.name} {obj.age} {obj.gender}&gt;&#34;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@pysnooper.snoop(custom_repr=(Person, print_person_obj))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    person = Person()
+</span></span><span class=line><span class=cl>    person.name = &#34;hustbill&#34;
+</span></span><span class=line><span class=cl>    person.age = 27
+</span></span><span class=line><span class=cl>    person.gender = &#34;male&#34;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    return person
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def main():
+</span></span><span class=line><span class=cl>    profile = demo_func()
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>main()
+</span></span></code></pre></td></tr></table></div></div><p>运行一下，观察一下效果。</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/QB6G4ZoE187IrEeDu7Gf43ianib75mjibe9QaHicZuKicXaLRNQE6Mobdrrf5lt3Py5DJ6HacNLbxeibDicnnkBVECJ0g/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=Image></p><p>如果你要自定义格式输出的有很多个类型，那么 <code>custom_repr</code> 参数的值可以这么写</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@pysnooper.snoop(custom_repr=((Person, print_person_obj), (numpy.ndarray, print_ndarray)))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>还有一点我提醒一下，元组的第一个元素可以是类型（如类名Person 或者其他基础类型 list等），也可以是一个判断对象类型的函数。</p><p>也就是说，下面三种写法是等价的。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># 【第一种写法】
+</span></span><span class=line><span class=cl>@pysnooper.snoop(custom_repr=(Person, print_persion_obj))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># 【第二种写法】
+</span></span><span class=line><span class=cl>def is_persion_obj(obj):
+</span></span><span class=line><span class=cl>    return isinstance(obj, Person)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@pysnooper.snoop(custom_repr=(is_persion_obj, print_persion_obj))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># 【第三种写法】
+</span></span><span class=line><span class=cl>@pysnooper.snoop(custom_repr=(lambda obj: isinstance(obj, Person), print_persion_obj))
+</span></span><span class=line><span class=cl>def demo_func():
+</span></span><span class=line><span class=cl>    ...
+</span></span></code></pre></td></tr></table></div></div><p>以上就是今天给大家介绍的一款调试神器（<code>PySnooper</code>） 的详细使用手册。</p><p>如果你还有其他关于调试的技巧，可以留言区分享出来，一起学习一下。</p><p>(完)</p><h3 id=pysnooper作者的github-repo和博客>PySnooper作者的Github Repo和博客</h3><p><a href=https://github.com/cool-RR/PySnooper>PySnooper Github Repo</a></p><p>作者的博客<a href=https://ram.rachum.com/>Ram Rachum</a></p><p><em>&ldquo;Live as if you were to die tomorrow. Learn as if you were to live forever.&rdquo; -Gandhi</em></p></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>Hustbill billyzhang2010@gmail.com</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2021-02-21</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/python/>Python</a></div><nav class=post-nav><a class=prev href=/post/2021/2021-02/2021-02-22-%E6%97%A9%E4%B8%8A%E9%86%92%E6%9D%A5%E5%8F%91%E7%8E%B0%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E6%A2%A6/><i class="iconfont icon-left"></i>
+<span class="prev-text nav-default">2021-02-22早上醒来发现做了一个梦</span>
+<span class="prev-text nav-mobile">上一篇</span>
+</a><a class=next href=/post/2021/2021-02/2021-02-21-%E8%81%8C%E5%9C%BA%E7%A4%BE%E6%81%90%E6%80%8E%E4%B9%88%E5%8A%9E%E5%A6%82%E4%BD%95%E8%B7%A8%E6%96%87%E5%8C%96%E6%B2%9F%E9%80%9A%E9%9A%9C%E7%A2%8D/><span class="next-text nav-default">2021 02 21 职场社恐怎么办，如何跨文化沟通障碍</span>
+<span class="next-text nav-mobile">下一篇</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname==="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="hustbill",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:billzhang2020@email.com class="iconfont icon-email" title=email></a><a href=https://tinyurl.com/y25haluf class="iconfont icon-stack-overflow" title=stack-overflow></a><a href=https://github.com/hustbill class="iconfont icon-github" title=github></a><a href=http://localhost:1313/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动
+</span><span class=division>|</span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a>
+</span><span class=copyright-year>&copy;
+2015 -
+2024<span class=heart><i class="iconfont icon-heart"></i></span><span>Hustbill</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script type=text/javascript src=/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js></script></body></html>

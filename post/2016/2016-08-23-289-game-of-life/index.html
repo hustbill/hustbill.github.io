@@ -1,0 +1,173 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>289. Game of Life - 张华的博客</title>
+<meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=Cache-Control content="no-transform"><meta http-equiv=Cache-Control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Hustbill"><meta name=description content="289-Game of Life **Question Editorial Solution
+My Submissions
+Total Accepted: 25596 Total Submissions: 71934 Difficulty: Medium
+According to the Wikipedia&amp;rsquo;s article: &amp;ldquo;The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&amp;rdquo; Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with itseight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):"><meta name=keywords content="读书,写作,技术,生活"><meta name=generator content="Hugo 0.124.1 with theme even"><link rel=canonical href=http://localhost:1313/post/2016/2016-08-23-289-game-of-life/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="289. Game of Life"><meta property="og:description" content="289-Game of Life **Question Editorial Solution
+My Submissions
+Total Accepted: 25596 Total Submissions: 71934 Difficulty: Medium
+According to the Wikipedia&rsquo;s article: &ldquo;The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&rdquo; Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with itseight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/post/2016/2016-08-23-289-game-of-life/"><meta property="article:section" content="post"><meta property="article:published_time" content="2016-08-23T13:18:00+00:00"><meta property="article:modified_time" content="2016-08-23T13:18:00+00:00"><meta itemprop=name content="289. Game of Life"><meta itemprop=description content="289-Game of Life **Question Editorial Solution
+My Submissions
+Total Accepted: 25596 Total Submissions: 71934 Difficulty: Medium
+According to the Wikipedia&rsquo;s article: &ldquo;The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&rdquo; Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with itseight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):"><meta itemprop=datePublished content="2016-08-23T13:18:00+00:00"><meta itemprop=dateModified content="2016-08-23T13:18:00+00:00"><meta itemprop=wordCount content="744"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="289. Game of Life"><meta name=twitter:description content="289-Game of Life **Question Editorial Solution
+My Submissions
+Total Accepted: 25596 Total Submissions: 71934 Difficulty: Medium
+According to the Wikipedia&rsquo;s article: &ldquo;The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&rdquo; Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with itseight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>张华的博客</a></div><div class=mobile-navbar-icon><span></span>
+<span></span>
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about/><li class=mobile-menu-item>About</li></a><a href=/links/><li class=mobile-menu-item>Links</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>张华的博客</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about/>About</a></li><li class=menu-item><a class=menu-item-link href=/links/>Links</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>289. Game of Life</h1><div class=post-meta><span class=post-time>2016-08-23</span><div class=post-category><a href=/categories/leetcode/>LeetCode</a></div><span class=more-meta>约 744 字 </span><span class=more-meta>预计阅读 4 分钟</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents></nav></div></div><div class=post-content><p>289-Game of Life
+ **Question
+Editorial Solution</p><p> <a href=https://leetcode.com/problems/game-of-life/submissions/>My Submissions</a></p><p>Total Accepted: <strong>25596</strong>
+Total Submissions: <strong>71934</strong>
+Difficulty: <strong>Medium</strong></p><p>According to the <a href=https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>Wikipedia&rsquo;s article</a>: &ldquo;The <strong>Game of Life</strong>, also known simply as <strong>Life</strong>, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&rdquo;
+Given a <em>board</em> with <em>m</em> by <em>n</em> cells, each cell has an initial state <em>live</em> (1) or <em>dead</em> (0). Each cell interacts with its<a href=https://en.wikipedia.org/wiki/Moore_neighborhood>eight neighbors</a> (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):</p><p>Any live cell with fewer than two live neighbors dies, as if caused by under-population.
+Any live cell with two or three live neighbors lives on to the next generation.
+Any live cell with more than three live neighbors dies, as if by over-population..
+Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</p><p>Write a function to compute the next state (after one update) of the board given its current state.
+<strong>Follow up</strong>: 
+Could you solve it in-place? Remember that the board needs to be updated at the same time: You cannot update some cells first and then use their updated values to update other cells.
+In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?</p><p>**Credits:**Special thanks to <a href=https://leetcode.com/discuss/user/jianchao.li.fighter>@jianchao.li.fighter</a> for adding this problem and creating all test cases.</p><p>Hide Company Tags
+ <a href=https://leetcode.com/company/dropbox/>Dropbox</a> <a href=https://leetcode.com/company/google/>Google</a> <a href=https://leetcode.com/company/snapchat/>Snapchat</a>
+Hide Tags
+ <a href=https://leetcode.com/tag/array/>Array</a>
+Hide Similar Problems
+ <a href=https://leetcode.com/problems/set-matrix-zeroes/>(M) Set Matrix Zeroes</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>public</span><span class=w> </span><span class=kd>class</span> <span class=nc>Solution</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=cm>/*To solve it in place, we use 2 bits to store 2 states:
+</span></span></span><span class=line><span class=cl><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>    [2nd bit, 1st bit] = [next state, current state]
+</span></span></span><span class=line><span class=cl><span class=cm>    
+</span></span></span><span class=line><span class=cl><span class=cm>    - 00  dead (next) &lt;- dead (current)
+</span></span></span><span class=line><span class=cl><span class=cm>    - 01  dead (next) &lt;- live (current)  
+</span></span></span><span class=line><span class=cl><span class=cm>    - 10  live (next) &lt;- dead (current)  
+</span></span></span><span class=line><span class=cl><span class=cm>    - 11  live (next) &lt;- live (current) 
+</span></span></span><span class=line><span class=cl><span class=cm>    In the beginning, every cell is either 00 or 01.
+</span></span></span><span class=line><span class=cl><span class=cm>    Notice that 1st state is independent of 2nd state.
+</span></span></span><span class=line><span class=cl><span class=cm>    Imagine all cells are instantly changing from the 1st to the 2nd state, at the same time.
+</span></span></span><span class=line><span class=cl><span class=cm>    Let&#39;s count # of neighbors from 1st state and set 2nd state bit.
+</span></span></span><span class=line><span class=cl><span class=cm>    Since every 2nd state is by default dead, no need to consider transition 01 -&gt; 00.
+</span></span></span><span class=line><span class=cl><span class=cm>    In the end, delete every cell&#39;s 1st state by doing &gt;&gt; 1.
+</span></span></span><span class=line><span class=cl><span class=cm>    For each cell&#39;s 1st bit, check the 8 pixels around itself, and set the cell&#39;s 2nd bit.
+</span></span></span><span class=line><span class=cl><span class=cm>    
+</span></span></span><span class=line><span class=cl><span class=cm>    Transition 01 -&gt; 11: when board == 1 and lives &gt;= 2 &amp;&amp; lives &lt;= 3.
+</span></span></span><span class=line><span class=cl><span class=cm>    Transition 00 -&gt; 10: when board == 0 and lives == 3.
+</span></span></span><span class=line><span class=cl><span class=cm>    To get the current state, simply do
+</span></span></span><span class=line><span class=cl><span class=cm>    
+</span></span></span><span class=line><span class=cl><span class=cm>    board[i][j] &amp; 1
+</span></span></span><span class=line><span class=cl><span class=cm>    To get the next state, simply do
+</span></span></span><span class=line><span class=cl><span class=cm>    
+</span></span></span><span class=line><span class=cl><span class=cm>    board[i][j] &gt;&gt; 1
+</span></span></span><span class=line><span class=cl><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>    */</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>gameOfLife</span><span class=p>(</span><span class=kt>int</span><span class=o>[][]</span><span class=w> </span><span class=n>board</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>if</span><span class=w> </span><span class=p>(</span><span class=n>board</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=kc>null</span><span class=w> </span><span class=o>||</span><span class=w> </span><span class=n>board</span><span class=p>.</span><span class=na>length</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=n>0</span><span class=p>)</span><span class=w> </span><span class=k>return</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=kt>int</span><span class=w> </span><span class=n>m</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>board</span><span class=p>.</span><span class=na>length</span><span class=p>,</span><span class=w> </span><span class=n>n</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>board</span><span class=o>[</span><span class=n>0</span><span class=o>]</span><span class=p>.</span><span class=na>length</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>0</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>m</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>j</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>0</span><span class=p>;</span><span class=w> </span><span class=n>j</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>n</span><span class=p>;</span><span class=w> </span><span class=n>j</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=kt>int</span><span class=w> </span><span class=n>lives</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>liveNeighbors</span><span class=p>(</span><span class=n>board</span><span class=p>,</span><span class=w> </span><span class=n>m</span><span class=p>,</span><span class=w> </span><span class=n>n</span><span class=p>,</span><span class=w> </span><span class=n>i</span><span class=p>,</span><span class=w> </span><span class=n>j</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=c1>// In the beginning, every 2nd bit is 0;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=c1>// So we only need to care about when the 2nd bit will become 1.</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=k>if</span><span class=w> </span><span class=p>(</span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=n>1</span><span class=w> </span><span class=o>&amp;&amp;</span><span class=w> </span><span class=n>lives</span><span class=w> </span><span class=o>&gt;=</span><span class=w> </span><span class=n>2</span><span class=w> </span><span class=o>&amp;&amp;</span><span class=w> </span><span class=n>lives</span><span class=w> </span><span class=o>&lt;=</span><span class=w> </span><span class=n>3</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                    </span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>3</span><span class=p>;</span><span class=w> </span><span class=c1>// Make the 2nd bit 1: 01 ---&gt; 11</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=k>if</span><span class=w> </span><span class=p>(</span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=n>0</span><span class=w> </span><span class=o>&amp;&amp;</span><span class=w> </span><span class=n>lives</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=n>3</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                    </span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>2</span><span class=p>;</span><span class=w> </span><span class=c1>// Make the 2nd bit 1:00 --&gt; 10</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>0</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>m</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>j</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>0</span><span class=p>;</span><span class=w> </span><span class=n>j</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>n</span><span class=p>;</span><span class=w> </span><span class=n>j</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>&gt;&gt;=</span><span class=w> </span><span class=n>1</span><span class=p>;</span><span class=w> </span><span class=c1>// Get the 2nd state.</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=nf>liveNeighbors</span><span class=p>(</span><span class=kt>int</span><span class=o>[][]</span><span class=w> </span><span class=n>board</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>m</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>n</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>j</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=kt>int</span><span class=w> </span><span class=n>lives</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>0</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>x</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>Math</span><span class=p>.</span><span class=na>max</span><span class=p>(</span><span class=n>i</span><span class=w> </span><span class=o>-</span><span class=w> </span><span class=n>1</span><span class=p>,</span><span class=w> </span><span class=n>0</span><span class=p>);</span><span class=w>  </span><span class=n>x</span><span class=w> </span><span class=o>&lt;=</span><span class=w> </span><span class=n>Math</span><span class=p>.</span><span class=na>min</span><span class=p>(</span><span class=n>i</span><span class=o>+</span><span class=n>1</span><span class=p>,</span><span class=w> </span><span class=n>m</span><span class=w> </span><span class=o>-</span><span class=w> </span><span class=n>1</span><span class=p>);</span><span class=w> </span><span class=n>x</span><span class=o>++</span><span class=w> </span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>y</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>Math</span><span class=p>.</span><span class=na>max</span><span class=p>(</span><span class=n>j</span><span class=w> </span><span class=o>-</span><span class=w> </span><span class=n>1</span><span class=p>,</span><span class=w> </span><span class=n>0</span><span class=p>);</span><span class=w>  </span><span class=n>y</span><span class=w> </span><span class=o>&lt;=</span><span class=w> </span><span class=n>Math</span><span class=p>.</span><span class=na>min</span><span class=p>(</span><span class=n>j</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>1</span><span class=p>,</span><span class=w> </span><span class=n>n</span><span class=w> </span><span class=o>-</span><span class=w> </span><span class=n>1</span><span class=p>);</span><span class=w> </span><span class=n>y</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>                </span><span class=n>lives</span><span class=w> </span><span class=o>+=</span><span class=w> </span><span class=n>board</span><span class=o>[</span><span class=n>x</span><span class=o>][</span><span class=n>y</span><span class=o>]</span><span class=w> </span><span class=o>&amp;</span><span class=w> </span><span class=n>1</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>lives</span><span class=w> </span><span class=o>-=</span><span class=w> </span><span class=n>board</span><span class=o>[</span><span class=n>i</span><span class=o>][</span><span class=n>j</span><span class=o>]</span><span class=w> </span><span class=o>&amp;</span><span class=w> </span><span class=n>1</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>lives</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>Hustbill</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2016-08-23</span></p></div><footer class=post-footer><nav class=post-nav><a class=prev href=/post/2016/2016-08-25-mac-%E6%8A%80%E5%B7%A7%E5%88%A0%E9%99%A4%E4%B8%8D%E5%B8%B8%E7%94%A8%E7%9A%84wifi-%E5%92%8C%E5%AF%86%E7%A0%81/><i class="iconfont icon-left"></i>
+<span class="prev-text nav-default">[Mac 技巧］删除不常用的wifi 和密码</span>
+<span class="prev-text nav-mobile">上一篇</span>
+</a><a class=next href=/post/2016/2016-08-19-%E5%9F%B9%E5%85%BB%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B9%A0%E6%83%AF%E5%86%99%E4%BD%9C/><span class="next-text nav-default">培养一个好习惯－写作</span>
+<span class="next-text nav-mobile">下一篇</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname==="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="hustbill",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:billzhang2020@email.com class="iconfont icon-email" title=email></a><a href=https://tinyurl.com/y25haluf class="iconfont icon-stack-overflow" title=stack-overflow></a><a href=https://github.com/hustbill class="iconfont icon-github" title=github></a><a href=http://localhost:1313/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动
+</span><span class=division>|</span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a>
+</span><span class=copyright-year>&copy;
+2015 -
+2024<span class=heart><i class="iconfont icon-heart"></i></span><span>Hustbill</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script type=text/javascript src=/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js></script></body></html>

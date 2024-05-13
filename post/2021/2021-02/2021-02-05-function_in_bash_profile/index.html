@@ -1,0 +1,73 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>2021 02 05 Function_in_bash_profile - 张华的博客</title>
+<meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=Cache-Control content="no-transform"><meta http-equiv=Cache-Control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Hustbill"><meta name=description content="改进了之前的脚本，把writeblog从Alias改成了function，可以接受从命令行传入的文件名，而不是用datetime加post生"><meta name=keywords content="读书,写作,技术,生活"><meta name=generator content="Hugo 0.124.1 with theme even"><link rel=canonical href=http://localhost:1313/post/2021/2021-02/2021-02-05-function_in_bash_profile/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="2021 02 05 Function_in_bash_profile"><meta property="og:description" content="改进了之前的脚本，把writeblog从Alias改成了function，可以接受从命令行传入的文件名，而不是用datetime加post生"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/post/2021/2021-02/2021-02-05-function_in_bash_profile/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-02-05T17:12:42-08:00"><meta property="article:modified_time" content="2021-02-05T17:12:42-08:00"><meta itemprop=name content="2021 02 05 Function_in_bash_profile"><meta itemprop=description content="改进了之前的脚本，把writeblog从Alias改成了function，可以接受从命令行传入的文件名，而不是用datetime加post生"><meta itemprop=datePublished content="2021-02-05T17:12:42-08:00"><meta itemprop=dateModified content="2021-02-05T17:12:42-08:00"><meta itemprop=wordCount content="266"><meta itemprop=keywords content="bash,"><meta name=twitter:card content="summary"><meta name=twitter:title content="2021 02 05 Function_in_bash_profile"><meta name=twitter:description content="改进了之前的脚本，把writeblog从Alias改成了function，可以接受从命令行传入的文件名，而不是用datetime加post生"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>张华的博客</a></div><div class=mobile-navbar-icon><span></span>
+<span></span>
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about/><li class=mobile-menu-item>About</li></a><a href=/links/><li class=mobile-menu-item>Links</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>张华的博客</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about/>About</a></li><li class=menu-item><a class=menu-item-link href=/links/>Links</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>2021 02 05 Function_in_bash_profile</h1><div class=post-meta><span class=post-time>2021-02-05</span><div class=post-category><a href=/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/>个人笔记</a></div><span class=more-meta>约 266 字 </span><span class=more-meta>预计阅读 1 分钟</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents></nav></div></div><div class=post-content><p>改进了之前的脚本，把writeblog从Alias改成了function，可以接受从命令行传入的文件名，而不是用datetime加post生成一个文件名。</p><p>使用方式是<code> writeblog 新的博文</code></p><p>会生成一篇博文 2021-02-06-新的博文.md</p><p>更新后的.bash_profile 如下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1>#.bash_profle</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>YEAR</span><span class=o>=</span><span class=sb>`</span>date +%Y<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>USER</span><span class=o>=</span><span class=sb>`</span>id -un<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>DATETIME</span><span class=o>=</span><span class=sb>`</span>date +%Y-%m-%d-%H-%M-%S<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>HUGO_BLOG</span><span class=o>=</span><span class=s2>&#34;/Users/</span><span class=nv>$USER</span><span class=s2>/git/pdca-blog/&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>YEAR</span><span class=o>=</span><span class=sb>`</span>date +%Y<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>DATE</span><span class=o>=</span><span class=sb>`</span>date +%Y-%m-%d<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>DATETIME</span><span class=o>=</span><span class=sb>`</span>date +%Y-%m-%d-%H-%M-%S<span class=sb>`</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>HUGO_BLOG</span><span class=o>=</span><span class=s2>&#34;/Users/</span><span class=nv>$USER</span><span class=s2>/git/pdca-blog&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>CONTENT_PATH</span><span class=o>=</span><span class=s2>&#34;content/post/</span><span class=nv>$YEAR</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>POST_PATH</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HUGO_BLOG</span><span class=s2>/</span><span class=nv>$CONTENT_PATH</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>postname</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$DATETIME</span><span class=s2>-post.md&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>typora</span><span class=o>=</span><span class=s2>&#34;open -a typora&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>cdblog</span><span class=o>=</span><span class=s2>&#34;cd </span><span class=nv>$HUGO_BLOG</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>newblog</span><span class=o>=</span><span class=s2>&#34;hugo new </span><span class=nv>$POST_PATH</span><span class=s2>/</span><span class=nv>$postname</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>typeblog</span><span class=o>=</span><span class=s2>&#34;typora </span><span class=nv>$POST_PATH</span><span class=s2>/</span><span class=nv>$postname</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>dpblog</span><span class=o>=</span><span class=s2>&#34;cd </span><span class=nv>$HUGO_BLOG</span><span class=s2> &amp;&amp; git add . &amp;&amp; git commit -m &#39;add or update the post </span><span class=nv>$DATETIME</span><span class=s2>&#39;  &amp;&amp; git push &amp;&amp; ./deploy.sh&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>ll</span><span class=o>=</span><span class=s2>&#34;ls -alth&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> writeblog <span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>post</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$DATE</span><span class=s2>-</span><span class=nv>$1</span><span class=s2>.md&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=nb>echo</span> <span class=s2>&#34;Blog name: </span><span class=nv>$post</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>  cdblog <span class=o>&amp;&amp;</span> hugo new <span class=nv>$POST_PATH</span>/<span class=nv>$post</span> <span class=o>&amp;&amp;</span> typora <span class=nv>$POST_PATH</span>/<span class=nv>$post</span>
+</span></span><span class=line><span class=cl>  <span class=c1>#  &amp;&amp; 前面的命令执行成功，才会执行后面的命令</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>Hustbill</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2021-02-05</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/bash/>bash</a></div><nav class=post-nav><a class=prev href=/post/2021/2021-02/2021-02-09-python-list-indices-must-be-integer/><i class="iconfont icon-left"></i>
+<span class="prev-text nav-default">2021 02 09 Python List Indices Must Be Integer</span>
+<span class="prev-text nav-mobile">上一篇</span>
+</a><a class=next href=/post/2021/2021-02/2021-02-05-%E8%BD%AC%E8%BD%BD-infoq-%E5%BF%AB%E6%89%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%8F%AD%E7%A7%98/><span class="next-text nav-default">转载-InfoQ-快手核心技术揭秘</span>
+<span class="next-text nav-mobile">下一篇</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname==="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="hustbill",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:billzhang2020@email.com class="iconfont icon-email" title=email></a><a href=https://tinyurl.com/y25haluf class="iconfont icon-stack-overflow" title=stack-overflow></a><a href=https://github.com/hustbill class="iconfont icon-github" title=github></a><a href=http://localhost:1313/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动
+</span><span class=division>|</span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a>
+</span><span class=copyright-year>&copy;
+2015 -
+2024<span class=heart><i class="iconfont icon-heart"></i></span><span>Hustbill</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script type=text/javascript src=/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js></script></body></html>
